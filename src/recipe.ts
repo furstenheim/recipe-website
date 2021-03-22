@@ -1,7 +1,5 @@
-import uuid from "uuid"
-
 type TimeUnit = 'min' | 'hour'
-
+var a = 1;
 interface Time {
   unit: TimeUnit
   time: number
@@ -30,12 +28,19 @@ interface RecipeIngredient {
 
 type RecipeContent = string
 
-interface Recipe {
+export interface Recipe {
   id: string
   uuid: string
   title: string
   url?: string
   content: RecipeContent
-  ingredients: Array<RecipeIngredient>
+  ingredientsContent: RecipeContent
+  ingredients: RecipeIngredient[]
+  time: RecipeTime
 }
 
+export interface RecipeSummary {
+  id: string
+  img?: string
+  title: string
+}
