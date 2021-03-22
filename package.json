@@ -14,7 +14,7 @@
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "4",
-    "@typescript-eslint/parser": "2.33.0",
+    "@typescript-eslint/parser": "4.18.0",
     "eslint": "7",
     "eslint-config-standard-with-typescript": "^20.0.0",
     "eslint-plugin-import": "2",
@@ -36,6 +36,7 @@
     "@types/uuid": "^8.3.0",
     "eslint-plugin-typescript": "^0.14.0",
     "sirv-cli": "^1.0.0",
+    "svelte-markdown": "^0.1.4",
     "typescript-eslint-parser": "^22.0.0",
     "uuid": "^8.3.2"
   }
