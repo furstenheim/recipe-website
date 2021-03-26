@@ -18,7 +18,7 @@ export interface Recipe {
   url?: string
   content: RecipeContent
   ingredientsContent: RecipeContent
-  time: RecipeTime
+  recipeTime: RecipeTime
 }
 
 export interface RecipeSummary {

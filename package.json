@@ -6,7 +6,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "validate": "svelte-check"
+    "validate": "svelte-check",
+    "prepare-recipes": "node script/prepare-recipes.js",
+    "test": "mocha script/*test.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -34,7 +36,11 @@
   },
   "dependencies": {
     "@types/uuid": "^8.3.0",
+    "chai": "^4.3.4",
     "eslint-plugin-typescript": "^0.14.0",
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.21",
+    "mocha": "^8.3.2",
     "sirv-cli": "^1.0.0",
     "svelte-markdown": "^0.1.4",
     "typescript-eslint-parser": "^22.0.0",

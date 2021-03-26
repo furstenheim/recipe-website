@@ -1,10 +1,11 @@
 <script lang="ts">//
 import Recipe from './Recipe.svelte'
 import { onMount } from 'svelte'
+import type { RecipeSummary } from './recipe'
 
 export let name: string
 
-let recipes:Recipe[] = []
+let recipes:RecipeSummary[] = []
 
 onMount(async function () {
   const res = await window.fetch('recipes.json')
