@@ -1,31 +1,33 @@
 <script lang="ts">//
 import SvelteMarkdown from 'svelte-markdown'
-import type { Recipe, RecipeSummary } from './recipe'
+import type { Recipe } from './recipe'
 import { onMount } from 'svelte'
-export let recipe: RecipeSummary
-let fullRecipe: Recipe
+export let params = {
+  recipeId: ''
+}
+let recipe: Recipe
 
 onMount(async function () {
-  const res = await window.fetch(`recipes/${recipe.id}.json`)
-  fullRecipe = await res.json()
+  const res = await window.fetch(`recipes/${params.recipeId}.json`)
+  recipe = await res.json()
 
-  console.log(fullRecipe)
+  console.log(recipe)
 })
 </script>
 
 <div class="recipe-container">
-    {#if fullRecipe}
+    {#if recipe}
 
-        <SvelteMarkdown source="{fullRecipe.title}" />
+        <SvelteMarkdown source="{recipe.title}" />
         <div>
-            <p>Cooking Time: {fullRecipe.recipeTime.cookingTime}</p>
-            <p>Total Time: {fullRecipe.recipeTime.totalTime}</p>
-            {#if fullRecipe.recipeTime.isStartPreviousDay}
+            <p>Cooking Time: {recipe.recipeTime.cookingTime}</p>
+            <p>Total Time: {recipe.recipeTime.totalTime}</p>
+            {#if recipe.recipeTime.isStartPreviousDay}
                 <p>Achtung! Prepare previous day</p>
             {/if}
         </div>
-        <SvelteMarkdown source="{fullRecipe.ingredientsContent}" />
-        <SvelteMarkdown source="{fullRecipe.content}" />
+        <SvelteMarkdown source="{recipe.ingredientsContent}" />
+        <SvelteMarkdown source="{recipe.content}" />
     {/if}
 </div>
 

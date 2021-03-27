@@ -43,6 +43,7 @@
     "mocha": "^8.3.2",
     "sirv-cli": "^1.0.0",
     "svelte-markdown": "^0.1.4",
+    "svelte-spa-router": "^3.1.0",
     "typescript-eslint-parser": "^22.0.0",
     "uuid": "^8.3.2"
   }
