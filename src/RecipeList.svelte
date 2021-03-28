@@ -1,7 +1,7 @@
 <script lang="ts">//
 import { onMount } from 'svelte'
 import RecipeSummaryPreview from './RecipeSummaryPreview.svelte'
-import type {RecipeSummary} from "./recipe";
+import type { RecipeSummary } from './recipe'
 
 let recipes:RecipeSummary[] = []
 export let params = {
