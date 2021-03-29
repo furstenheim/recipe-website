@@ -15,6 +15,10 @@ onMount(async function () {
 })
 </script>
 {#if recipe}
+  <div class="ingredients-content-handler">
+    <p class="ingredients-content-handler-opener">Ingredients</p>
+  </div>
+
   <div class="recipe-container">
     <div class="side-ingredients">
       <SvelteMarkdown source="{recipe.ingredientsContent}" />
@@ -62,6 +66,46 @@ onMount(async function () {
         margin-left: 20px;
         padding-top: 50px;
         max-width: min(33vw, calc((100vw - 1000px)));
+    }
+/*
+    .ingredients-content-handler {
+        position: fixed;
+    }*/
+    .ingredients-content-handler {
+        position: absolute;
+        display: flex;
+        transform: rotate(90deg);
+        transform-origin: bottom left;
+        margin: 0px;
+        top: 80vh;
+        left:0vw;
+    }
+
+    .ingredients-content-handler:after {
+        position: absolute;
+        content: '\00a0';
+        left: -10px;
+        top: 0px;
+        width: 100%;
+        padding: 10px;
+        z-index: -1;
+        border-top: 1px solid lightgrey;
+        border-left: 1px solid lightgrey;
+        border-right: 1px solid lightgrey;
+        background: #b4c6d7;
+        transform: perspective(100px) rotateX(40deg);
+
+    }
+
+    .ingredients-content-handler-opener {
+        color: white;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        width: 100px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 0px;
     }
 
     .cooking-container {
