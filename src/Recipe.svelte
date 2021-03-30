@@ -76,8 +76,8 @@ function toggleOpen () {
         background: #b4c6d7;
         /*margin: 20px;*/
         position: fixed;
-        left: max(-50vw, calc(-500px));
-        width: min(50vw, 500px);
+        left: calc(-1 * min(max(min(50vw, 500px), 300px), 100vw));
+        width: min(max(min(50vw, 500px), 300px), 100vw);
         height: 100vh;
         top: 0vh;
 
@@ -108,7 +108,7 @@ function toggleOpen () {
     .ingredients-content-handler-opener--open {
         transition-timing-function: ease-in-out;
         transition-duration: 500ms;
-        left:min(50vw, 500px);
+        left:min(max(min(50vw, 500px), 300px), 100vw);
     }
 
     .ingredients-content-handler:after {
