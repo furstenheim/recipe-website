@@ -13,9 +13,16 @@ onMount(async function () {
 
   console.log(recipe)
 })
+let isSideIngredientsOpen = false
+function toggleOpen () {
+  isSideIngredientsOpen = !isSideIngredientsOpen
+}
 </script>
 {#if recipe}
-  <div class="ingredients-content-handler">
+  <div class="ingredients-side-panel" class:ingredients-side-panel--open="{isSideIngredientsOpen}" >
+    <SvelteMarkdown source="{recipe.ingredientsContent}" />
+  </div>
+  <div class="ingredients-content-handler" on:click={toggleOpen} class:ingredients-content-handler-opener--open="{isSideIngredientsOpen}">
     <p class="ingredients-content-handler-opener">Ingredients</p>
   </div>
 
@@ -45,21 +52,13 @@ onMount(async function () {
 
 
 <style>
+
     .recipe-container {
         display: block;
     }
 
-    @media only screen and (max-width: 1300px) {
-        .side-ingredients {
-            display: none;
-        }
-    }
 
-    @media only screen and (min-width: 1300px) {
-        .main-ingredients {
-            display: none;
-        }
-    }
+
     .side-ingredients {
         position: fixed;
         float: left;
@@ -67,18 +66,49 @@ onMount(async function () {
         padding-top: 50px;
         max-width: min(33vw, calc((100vw - 1000px)));
     }
-/*
+
+
+    .ingredients-side-panel {
+        color: white;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+        background: #b4c6d7;
+        /*margin: 20px;*/
+        position: fixed;
+        left: max(-50vw, calc(-500px));
+        width: min(50vw, 500px);
+        height: 100vh;
+        top: 0vh;
+
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+    }
+
+    .ingredients-side-panel--open {
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+        left: 0vw;
+    }
+
+
     .ingredients-content-handler {
         position: fixed;
-    }*/
-    .ingredients-content-handler {
-        position: absolute;
         display: flex;
         transform: rotate(90deg);
         transform-origin: bottom left;
         margin: 0px;
         top: 80vh;
         left:0vw;
+
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+    }
+
+    .ingredients-content-handler-opener--open {
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+        left:min(50vw, 500px);
     }
 
     .ingredients-content-handler:after {
@@ -113,6 +143,24 @@ onMount(async function () {
         padding: 1em;
         max-width: min(max(500px, 33vw), 100vh);
         margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .side-ingredients {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1300px) {
+        .main-ingredients {
+            display: none;
+        }
+        .ingredients-content-handler {
+            display: none;
+        }
+        .ingredients-side-panel {
+            display: none;
+        }
     }
 
 </style>
