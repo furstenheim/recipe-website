@@ -15,6 +15,7 @@ export interface Recipe {
   id: string
   uuid: string
   title: string
+  img?: string
   url?: string
   content: RecipeContent
   ingredientsContent: RecipeContent

@@ -32,7 +32,4 @@ onMount(async function () {
   <p>No more recipes</p>
 {/if}
 
-<style>
-
-</style>
 

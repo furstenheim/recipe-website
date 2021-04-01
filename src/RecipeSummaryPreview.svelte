@@ -15,7 +15,7 @@ function onMouseLeave () {
 }
 </script>
 
-<div on:click={() => push(`/recipe/${recipe.id}`)} on:mouseenter={onMouseEnter} on:mouseleave={onMouseLeave} class:hovered={hovered}>
+<div class="summary" on:click={() => push(`/recipe/${recipe.id}`)} on:mouseenter={onMouseEnter} on:mouseleave={onMouseLeave} class:hovered={hovered}>
   <SvelteMarkdown source="{recipe.title}" />
   <SvelteMarkdown source="{recipe.img}" />
 </div>
@@ -23,6 +23,10 @@ function onMouseLeave () {
 <style>
   .hovered {
       cursor: pointer
+  }
+
+  :global(.summary img) {
+     max-width: 500px;
   }
 
 </style>

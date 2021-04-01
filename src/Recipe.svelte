@@ -34,6 +34,7 @@ function toggleOpen () {
   <div class="cooking-container">
 
           <SvelteMarkdown source="{recipe.title}" />
+          <SvelteMarkdown source="{recipe.img}" />
           <div>
               <p>Cooking Time: {recipe.recipeTime.cookingTime}</p>
               <p>Total Time: {recipe.recipeTime.totalTime}</p>
@@ -143,6 +144,10 @@ function toggleOpen () {
         padding: 1em;
         max-width: min(max(500px, 33vw), 100vh);
         margin: 0 auto;
+    }
+
+    :global(.cooking-container img) {
+        max-width: 500px;
     }
 
     @media only screen and (max-width: 1300px) {
