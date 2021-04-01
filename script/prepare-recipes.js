@@ -40,7 +40,7 @@ async function main () {
         throw new Error(`Unknown header ${header}`)
       }
       const content = pair[1]
-      const imagesReplaced = _.trim(content.replace('../public/imgs', 'imgs'))
+      const imagesReplaced = _.trim(content.replace('../docs/imgs', 'imgs'))
       if (parsers[header]) {
         parsedRecipe[_.camelCase(header)] = parsers[header](imagesReplaced)
       } else {
@@ -55,10 +55,10 @@ async function main () {
       }
     })
     parsedRecipes.push(parsedRecipe)
-    await fs.writeJson(`../public/recipes/${id}.json`, parsedRecipe)
+    await fs.writeJson(`../docs/recipes/${id}.json`, parsedRecipe)
   }
   const summary = _.map(parsedRecipes, r => _.pick(r, ['img', 'id', 'title']))
-  await fs.writeJson('../public/recipes.json', summary)
+  await fs.writeJson('../docs/recipes.json', summary)
 }
 
 

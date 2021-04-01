@@ -8,7 +8,7 @@ http://www.gastronomiaycia.com/2014/05/27/ensalada-de-pasta-con-berenjena-asada-
 
 [img]: #()
 
-![](../public/imgs/pasta_berenjena_asada_mozz1.jpg)
+![](../docs/imgs/pasta_berenjena_asada_mozz1.jpg)
 
 [recipe-time]: #()
 
@@ -68,7 +68,7 @@ cocción y para que esté fría para la ensalada.
 Corta la berenjena asada, una vez pelada, en trozos irregulares. Corta las
 bolas de mozzarella en rodajas para repartirlas antes de servir la ensalada
 de pasta.
-![Ensalada de pasta con berenjena asada y mozzarella](../public/imgs/pasta_berenjena_asada_mozz1.jpg)
+![Ensalada de pasta con berenjena asada y mozzarella](../docs/imgs/pasta_berenjena_asada_mozz1.jpg)
 
 
 Prepara la vinagreta, trocea los tomates secos no muy pequeños y ponlos en

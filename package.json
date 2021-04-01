@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv docs",
     "validate": "svelte-check",
     "prepare-recipes": "node script/prepare-recipes.js",
     "test": "mocha script/*test.js"

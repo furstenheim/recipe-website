@@ -8,7 +8,7 @@
 
 [img]: #()
 
-![](../public/imgs/0003-pollo_cremosa_curcuma1.jpg)
+![](../docs/imgs/0003-pollo_cremosa_curcuma1.jpg)
 
 [recipe-time]: #()
 

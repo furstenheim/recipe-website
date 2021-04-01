@@ -5,7 +5,7 @@
 
 [img]: #()
 
-![](../public/imgs/0002-brandada-bacalo.jpg)
+![](../docs/imgs/0002-brandada-bacalo.jpg)
 
 [recipe-time]: #()
 

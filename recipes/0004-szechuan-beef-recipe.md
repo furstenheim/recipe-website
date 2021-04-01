@@ -4,7 +4,7 @@
 
 [img]: #()
 
-![](../public/imgs/0004-szechuan-beef.webp)
+![](../docs/imgs/0004-szechuan-beef.webp)
 
 [#url]:#()
 

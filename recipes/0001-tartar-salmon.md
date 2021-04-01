@@ -10,7 +10,7 @@ Tartar de salmón y aguacate: receta fácil y rápida
 
 [img]: #()
 
-![](../public/imgs/0001-tartar-salmon.jpg)
+![](../docs/imgs/0001-tartar-salmon.jpg)
 
 [recipe-time]: #()
 
