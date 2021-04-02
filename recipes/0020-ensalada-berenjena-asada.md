@@ -8,7 +8,7 @@ http://www.gastronomiaycia.com/2014/05/27/ensalada-de-pasta-con-berenjena-asada-
 
 [img]: #()
 
-![](../docs/imgs/pasta_berenjena_asada_mozz1.jpg)
+![](../docs/imgs/0020-pasta_berenjena_asada_mozz1.jpg)
 
 [recipe-time]: #()
 
