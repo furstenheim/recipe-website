@@ -1,7 +1,8 @@
 <script lang="ts">//
 import SvelteMarkdown from 'svelte-markdown'
 import type { Recipe } from './recipe'
-import { onMount } from 'svelte'
+import {afterUpdate, onMount} from 'svelte'
+import copy from 'copy-html-to-clipboard'
 export let params = {
   recipeId: ''
 }
@@ -17,6 +18,26 @@ let isSideIngredientsOpen = false
 function toggleOpen () {
   isSideIngredientsOpen = !isSideIngredientsOpen
 }
+
+afterUpdate(function () {
+  addCopyButton(document.querySelector('.side-ingredients h3'))
+  addCopyButton(document.querySelector('.main-ingredients h3'))
+})
+
+function addCopyButton (element) {
+  if (element) {
+    const copyButton = document.createElement('button')
+    copyButton.classList.add('icon-clipboard')
+    copyButton.classList.add('ingredients-copy-button')
+    copyButton.addEventListener('click', copyIngredients)
+    element.appendChild(copyButton)
+  }
+}
+
+function copyIngredients () {
+  const ingredientsElement = document.querySelector('.main-ingredients') || document.querySelector('.side-ingredients')
+  copy(ingredientsElement.innerHTML, { asHtml: true })
+}
 </script>
 {#if recipe}
   <div class="ingredients-side-panel" class:ingredients-side-panel--open="{isSideIngredientsOpen}" >
@@ -26,9 +47,10 @@ function toggleOpen () {
     <p class="ingredients-content-handler-opener">Ingredients</p>
   </div>
 
+
   <div class="recipe-container">
     <div class="side-ingredients">
-      <SvelteMarkdown source="{recipe.ingredientsContent}" />
+        <SvelteMarkdown source="{recipe.ingredientsContent}" />
     </div>
 
   <div class="cooking-container">
@@ -148,6 +170,11 @@ function toggleOpen () {
 
     :global(.cooking-container img) {
         max-width: 500px;
+    }
+
+
+    :global(.ingredients-copy-button) {
+        margin-left: 10px;
     }
 
     @media only screen and (max-width: 1300px) {

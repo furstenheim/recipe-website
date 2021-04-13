@@ -18,6 +18,8 @@ CookingTime: 2 h
 
 [ingredients-content]: #()
 
+### Ingredientes
+
 * 200 g de bacalao congelado
 * 15 u langostinos vanamei
 *  1 cebolla

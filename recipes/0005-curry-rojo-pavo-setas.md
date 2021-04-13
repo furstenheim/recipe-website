@@ -21,7 +21,7 @@ CookingTime: 30 min
 
 [ingredients-content]: #()
 
-Ingredientes (4 comensales)
+### Ingredientes (4 comensales)
 
    - 700 gramos de pavo deshuesado
    - 1 blanco de puerro

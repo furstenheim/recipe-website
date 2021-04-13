@@ -12,7 +12,7 @@ const page:number = Math.max(parseInt(params.page) - 1, 0)
 let loaded: boolean = false
 
 console.log(page)
-const pageSize = 20
+const pageSize = 100
 
 onMount(async function () {
   const res = await window.fetch('recipes.json')

@@ -20,7 +20,7 @@ CookingTime: 15 min
 
 [ingredients-content]: #()
 
-INGREDIENTS (4 Servings):
+### INGREDIENTS (4 Servings):
 
    - 1 lb skirt steak or flank steak
    - 3 Tbsp Carapelli Unfiltered Organic Extra Virgin Olive Oil divided

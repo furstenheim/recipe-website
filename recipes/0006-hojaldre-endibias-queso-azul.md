@@ -20,7 +20,7 @@ CookingTime: 15 min
 
 [ingredients-content]: #()
 
-Ingredientes (4 comensales)
+### Ingredientes (4 comensales)
 
    - 1 lámina de hojaldre fresco
    - 1 huevo

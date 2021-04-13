@@ -20,8 +20,8 @@ CookingTime: 10
 
 [ingredients-content]: #()
 
-### 
-2 blocks of frozen sanuki udon
+### Ingredients
+* 2 blocks of frozen sanuki udon
 * 2 teaspoon sesame oil
 * 2 tablespoon unsalted butter
 * 1 clove garlic, crushed

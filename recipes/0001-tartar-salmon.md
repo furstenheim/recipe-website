@@ -20,7 +20,7 @@ CookingTime 20 min
 
 [ingredients-content]: #()
 
-#### Ingredientes (2 personas)
+### Ingredientes (2 personas)
 
 
    - Salmón fresco sin piel ni espinas 300 g
