@@ -8516,7 +8516,7 @@ var app = (function () {
     const { console: console_1$3 } = globals;
     const file$2 = "src/Recipe.svelte";
 
-    // (47:0) {#if recipe}
+    // (51:0) {#if recipe}
     function create_if_block$2(ctx) {
     	let div0;
     	let sveltemarkdown0;
@@ -8626,23 +8626,23 @@ var app = (function () {
     			create_component(sveltemarkdown5.$$.fragment);
     			attr_dev(div0, "class", "ingredients-side-panel svelte-s5fwi3");
     			toggle_class(div0, "ingredients-side-panel--open", /*isSideIngredientsOpen*/ ctx[1]);
-    			add_location(div0, file$2, 47, 2, 1975);
+    			add_location(div0, file$2, 51, 2, 2055);
     			attr_dev(p0, "class", "ingredients-content-handler-opener svelte-s5fwi3");
-    			add_location(p0, file$2, 51, 4, 2286);
+    			add_location(p0, file$2, 55, 4, 2366);
     			attr_dev(div1, "class", "ingredients-content-handler svelte-s5fwi3");
     			toggle_class(div1, "ingredients-content-handler-opener--open", /*isSideIngredientsOpen*/ ctx[1]);
-    			add_location(div1, file$2, 50, 2, 2145);
+    			add_location(div1, file$2, 54, 2, 2225);
     			attr_dev(div2, "class", "side-ingredients svelte-s5fwi3");
-    			add_location(div2, file$2, 56, 4, 2396);
-    			add_location(p1, file$2, 65, 14, 2672);
-    			add_location(p2, file$2, 66, 14, 2739);
-    			add_location(div3, file$2, 64, 10, 2652);
+    			add_location(div2, file$2, 60, 4, 2476);
+    			add_location(p1, file$2, 69, 14, 2752);
+    			add_location(p2, file$2, 70, 14, 2819);
+    			add_location(div3, file$2, 68, 10, 2732);
     			attr_dev(div4, "class", "main-ingredients svelte-s5fwi3");
-    			add_location(div4, file$2, 71, 10, 2947);
+    			add_location(div4, file$2, 75, 10, 3027);
     			attr_dev(div5, "class", "cooking-container svelte-s5fwi3");
-    			add_location(div5, file$2, 60, 2, 2505);
+    			add_location(div5, file$2, 64, 2, 2585);
     			attr_dev(div6, "class", "recipe-container svelte-s5fwi3");
-    			add_location(div6, file$2, 55, 2, 2361);
+    			add_location(div6, file$2, 59, 2, 2441);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -8766,14 +8766,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(47:0) {#if recipe}",
+    		source: "(51:0) {#if recipe}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:14) {#if recipe.recipeTime.isStartPreviousDay}
+    // (72:14) {#if recipe.recipeTime.isStartPreviousDay}
     function create_if_block_1(ctx) {
     	let p;
 
@@ -8781,7 +8781,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Achtung! Prepare previous day";
-    			add_location(p, file$2, 68, 18, 2863);
+    			add_location(p, file$2, 72, 18, 2943);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -8795,7 +8795,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(68:14) {#if recipe.recipeTime.isStartPreviousDay}",
+    		source: "(72:14) {#if recipe.recipeTime.isStartPreviousDay}",
     		ctx
     	});
 
@@ -8934,13 +8934,19 @@ var app = (function () {
     	});
 
     	function addCopyButton(element) {
-    		if (element) {
-    			const copyButton = document.createElement("button");
-    			copyButton.classList.add("icon-clipboard");
-    			copyButton.classList.add("ingredients-copy-button");
-    			copyButton.addEventListener("click", copyIngredients);
-    			element.appendChild(copyButton);
+    		if (!element) {
+    			return;
     		}
+
+    		if (element.querySelector(".ingredients-copy-button")) {
+    			return;
+    		}
+
+    		const copyButton = document.createElement("button");
+    		copyButton.classList.add("icon-clipboard");
+    		copyButton.classList.add("ingredients-copy-button");
+    		copyButton.addEventListener("click", copyIngredients);
+    		element.appendChild(copyButton);
     	}
 
     	function copyIngredients() {

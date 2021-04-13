@@ -25,13 +25,17 @@ afterUpdate(function () {
 })
 
 function addCopyButton (element) {
-  if (element) {
-    const copyButton = document.createElement('button')
-    copyButton.classList.add('icon-clipboard')
-    copyButton.classList.add('ingredients-copy-button')
-    copyButton.addEventListener('click', copyIngredients)
-    element.appendChild(copyButton)
+  if (!element) {
+    return
   }
+  if (element.querySelector('.ingredients-copy-button')) {
+    return
+  }
+  const copyButton = document.createElement('button')
+  copyButton.classList.add('icon-clipboard')
+  copyButton.classList.add('ingredients-copy-button')
+  copyButton.addEventListener('click', copyIngredients)
+  element.appendChild(copyButton)
 }
 
 function copyIngredients () {
