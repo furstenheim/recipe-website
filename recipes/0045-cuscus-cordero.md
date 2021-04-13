@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Cuscús con cordero
 
 [img]: #()
 
@@ -20,7 +20,27 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 250 gramos de cuscús
+* 250 gramos de agua (o caldo vegetal)
+* 4-8 chuletas de
+cordero (según el peso)
+* ½ puerro
+* 4 dientes de ajo
+* 3 centímetros de raíz
+de jengibre
+* 1 c/p
+de hierbabuena seca
+* 1 c/p de Tandoori Masala
+* 1 manzana pequeña o media
+grande (Fuji por ejemplo)
+* 3 c/s de pasas
+* 3 c/s de piñones
+* unas ramitas
+de cilantro fresco
+* aceite de oliva, sal.
+
 
 
 [content]: #()
@@ -34,7 +54,7 @@ vegetales y especias pueden hacer que cada vez disfrutemos de un plato
 nuevo.
 
 Hoy hemos hecho una rápida elaboración de este receta, hay que agradecer
-que esta sémola <http://www.gastronomiaycia.com/2009/07/22/semola/> sea de
+que esta sémola sea de
 tan rápida cocción, tan versátil y nutritiva. Con el *cuscús*, unas
 chuletas de *cordero*, especias y un sofrito básico, puedes obtener un
 plato con el que tus comensales se chuparán los dedos.
@@ -43,18 +63,11 @@ No hemos prescindido de las pasas y piñones que tan bien acompañan al
 cuscús, aportando por un lado dulzor y por el otro textura. Con poco tiempo
 para cocinar y con ganas de disfrutar en la mesa, el Cuscús con cordero se
 presenta como una buena elección.
-Ingredientes (4 comensales)
 
-250 gramos de cuscús, 250 gramos de agua (o caldo vegetal), 4-8 chuletas de
-cordero (según el peso), ½ puerro, 4 dientes de ajo,3 centímetros de raíz
-de jengibre <http://www.gastronomiaycia.com/2008/05/07/el-jengibre/>, 1 c/p
-de hierbabuena seca, 1 c/p de Tandoori Masala, 1 manzana pequeña o media
-grande (Fuji por ejemplo), 3 c/s de pasas, 3 c/s de piñones, unas ramitas
-de cilantro fresco, aceite de oliva, sal.
-Elaboración
+### Elaboración
 
 Empieza elaborando el cuscús, el procedimiento es diferente a como lo
-hacemos para el Tabulé <http://www.gastronomiaycia.com/2008/08/03/tabule/>.
+hacemos para el Tabulé.
 Pela y pica el puerro y ponlo en una cazuela o sartén amplia con un poco de
 aceite y una pizca de sal a fuego medio-bajo. Rehógalo hasta que esté
 tierno e incorpora entonces dos dientes de ajo pelados y picados y la raíz
@@ -66,13 +79,10 @@ que los piñones se doren y las pasas se inflen. A continuación vierte el
 cuscús, mézclalo bien con el resto de ingredientes, añade sal al gusto, la
 hierbabuena y el *Tandoori Masala*, vuelve a mezclar y vierte el agua o el
 caldo.
-[image: Cuscús con cordero]
-<http://www.gastronomiaycia.com/fotos/cusc%C3%BAs-con-cordero/cuscus_cordero2.jpg>
 
 Sube el fuego y cuando rompa a hervir apágalo, retira el recipiente del
 fogón y tápalo, déjalo entre 5 y 10 minutos para que se hidrate, mientras
-tanto pica el cilantro
-<http://www.gastronomiaycia.com/2008/07/08/cilantro-o-coriandro/> e
+tanto pica el cilantro e
 incorpóralo al cuscús, mézclalo bien con una cuchara de acero inoxidable,
 ayuda a que el grano quede suelto.
 

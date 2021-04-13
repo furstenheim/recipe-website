@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Guiso de Carne
 
 [img]: #()
 
@@ -20,7 +20,23 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4-6 comensales)
+    
+* 750 gramos de cuello de cordero
+* 1 cebolla morada
+* 3-4 dientes de ajo
+* 2
+c/p generosas de pulpa de pimiento choricero
+* 1 kilo de patatas
+* 1 c/c de
+pimentón agridulce
+* c/n de pimienta negra recién molida
+* ½ c/c de comino
+molido
+* c/n de sal
+* 3-4 ramitas de tomillo fresco
+* c/n de aceite de oliva
+virgen extra.
 
 
 [content]: #()
@@ -40,15 +56,9 @@ verduras. Para quienes se inicien en la cocina, este guiso de cordero con
 patatas es ideal porque es muy fácil de hacer. Aquí tenéis una receta para
 cualquier día de la semana, pues además es muy económico.
 
-Ingredientes (4-6 comensales)
 
-750 gramos de cuello de cordero, 1 cebolla morada, 3-4 dientes de ajo, 2
-c/p generosas de pulpa de pimiento choricero, 1 kilo de patatas, 1 c/c de
-pimentón agridulce, c/n de pimienta negra recién molida, ½ c/c de comino
-molido, c/n de sal, 3-4 ramitas de tomillo fresco, c/n de aceite de oliva
-virgen extra.
 
-Elaboración
+### Elaboración
 
 Prepara la carne para el guiso, puedes cortar el cordero al gusto. Pela la
 cebolla y pícala en brunoise, pela los dientes de ajo y dales un golpe para

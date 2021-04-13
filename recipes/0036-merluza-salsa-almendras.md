@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Merluza con salsa de almendras y ajo negro
 
 [img]: #()
 
@@ -14,40 +14,40 @@
 
 PreviousDay: false
 
-TotalTime: 
+TotalTime: 50 min
 
-CookingTime: 
+CookingTime: 40 min
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 4 lomos de merluza
+* c/n de aceite de oliva virgen extra
+* c/n de sal.
+Para la salsa de almendras2 c/s de aceite de oliva virgen extra
+* 1 chalota
+* 1 diente de ajo
+* 90 gramos de almendra molida
+* 300 gramos de caldo de pescado
+* 100 gramos de nata para cocinar
+* ½ c/c de pimienta blanca molida
+* 1 c/c rasa de lemon grass en polvo
+* 1 c/s de salsa de ostras
+* c/n de sal.
+Otros
+ingredientes
+* 3 dientes de ajo negro
+* 1 ramita de perejil
+* 2 c/s de grosellas. 
 
 
 [content]: #()
-
-
-Merluza con salsa de almendras y ajo negro
 
 Esta receta de Merluza con salsa de almendras y ajo negro es muy fácil de
 hacer, además no necesita mucho tiempo y los ingredientes con los que se
 elaboran están al alcance de todos. Con una buena materia prima esta es una
 perfecta receta para Navidad y para cualquier comida especial.
-
-VelSid <http://gastronomiaycia.republica.com/author/velsid/>03 dic 15
-
-   - 2Comentar
-   <http://gastronomiaycia.republica.com/2015/12/03/merluza-con-salsa-de-almendras-y-ajo-negro/#the-comments>
-   -
-   -
-
-   -
-   - Pin It
-   <http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.gastronomiaycia.com%2F2015%2F12%2F03%2Fmerluza-con-salsa-de-almendras-y-ajo-negro%2F&media=http://gastronomiaycia.republica.com/wp-content/uploads/2015/12/merluza_salsaalmendra_ajonp.jpg>
-   - [image: Menea esto en Meneame.net]
-   <http://meneame.net/submit.php?url=http://www.gastronomiaycia.com/2015/12/03/merluza-con-salsa-de-almendras-y-ajo-negro/>
-
-[image: Merluza con salsa de almendras y ajo negro]
-<http://gastronomiaycia.republica.com/fotos/recetas/merluza_salsaalmendra_ajon1.jpg>
 
 Tenemos otra buena propuesta para servir un plato principal de pescado muy
 rico, saludable, nutritivo y especialmente sabroso en las próximas fiestas
@@ -61,16 +61,8 @@ rápida y sana, y para terminar se combinan pescado, salsa y otros
 ingredientes que aportan distintos matices que se agradecen, no dejéis de
 incorporar el *ajo negro* porque es especialmente apropiado para este plato
 y además ya sabéis que tiene múltiples beneficios.
-Ingredientes (4 comensales)
 
-4 lomos de merluza, c/n de aceite de oliva virgen extra, c/n de sal.
-Para la salsa de almendras2 c/s de aceite de oliva virgen extra, 1 chalota, 1
-diente de ajo, 90 gramos de almendra molida, 300 gramos de caldo de pescado,
-100 gramos de nata para cocinar, ½ c/c de pimienta blanca molida, 1 c/c
-rasa de lemon grass en polvo, 1 c/s de salsa de ostras, c/n de sal.Otros
-ingredientes3 dientes de ajo negro
-<http://gastronomiaycia.republica.com/2014/06/18/ajo-negro-espanol/>, 1
-ramita de perejil, 2 c/s de grosellas. Elaboración
+### Elaboración
 
 Limpia la merluza dejando los lomos limpios de espinas y con la piel,
 sécalos bien con papel de cocina absorbente y reserva en el frigorífico
@@ -82,14 +74,11 @@ pocha la chalota y el ajo, añadiendo una pizca de sal. Cuando estén tiernos
 añade la almendra y rehoga un par de minutos.
 
 A continuación moja con el caldo y la nata, y condimenta con la pimienta,
-el lemon grass, la salsa de ostras
-<http://gastronomiaycia.republica.com/2010/02/04/salsa-de-ostras/> y sal al
+el lemon grass, la salsa de ostras y sal al
 gusto. Sube el fuego y lleva a ebullición mientras bates con unas varillas
 manuales. Cuando rompa a hervir baja el fuego y cocina la salsa unos 8-10
 minutos, o hasta que la salsa espese.
 
-[image: Merluza con salsa de almendras y ajo negro]
-<http://gastronomiaycia.republica.com/fotos/recetas/merluza_salsaalmendra_ajon2.jpg>
 
 Mientras se termina de hacer la salsa puedes cocinar el pescado, sálalo al
 gusto y hazlo a la plancha, primero por el lado de la piel y después por la

@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Risotto de mozzarella y tomate seco
 
 [img]: #()
 
@@ -20,16 +20,31 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4-6 comensales)
+    
+* 400 gramos de arroz carnaroli o arborio
+* 2
+chalotas
+* 160 ml. de vino blanco seco
+* 1'5 litros de caldo de verduras y
+jamón
+* 250 gramos de mozzarella fresca
+* 100 gramos de tomates secos en
+aceite (se
+puede variar la cantidad al gusto, según lo hidratados que estén los
+tomates, su peso variará)
+* 1 c/s de tomillo fresco (las hojas)
+* pimienta
+negra recién molida
+* parmesano recién rallado
+* sal
+* aceite de oliva virgen
+extra.
 
 
 [content]: #()
 
-
-http://www.gastronomiaycia.com/2011/02/23/risotto-de-mozzarella-y-tomates-secos/
-
-En el libro Cocina Italiana
-<http://www.gastronomiaycia.com/2010/12/03/cocina-italiana-de-maxine-clark/>
+En el [libro Cocina Italiana](http://www.gastronomiaycia.com/2010/12/03/cocina-italiana-de-maxine-clark/)
 encontramos
 la idea de esta *receta de risotto* con *mozzarella y tomate seco* que
 adecuado a nuestro gusto y despensa, tenemos que decir que hemos
@@ -40,25 +55,14 @@ distintos matices y combinaciones de sabor.
 Nos encantaría que también probarais el *Risotto de mozzarella y tomate
 seco*, y compartierais con todos nosotros vuestras propuestas. Si tenéis
 posibilidad de hacerlo con mozzarella de búfala
-<http://www.gastronomiaycia.com/2008/03/02/queso-mozzarella-de-bufala-o-de-vaca/>
 no
 lo dudéis, y sobre el tomate seco, si tiene un porcentaje de hidratación
 mínimo, incorporarlo al principio, si se trata de un tomate seco más
 tierno, podéis añadirlo a mitad de la cocción. En este caso hemos utilizado
 el tomate que tenemos más seco, así se ha ido rehidratando con la cocción
 del arroz a la vez que le transmitía el sabor.
-Ingredientes (4-6 comensales)
 
-400 gramos de arroz carnaroli
-<http://www.gastronomiaycia.com/2009/08/20/arroz-carnaroli/> o arborio, 2
-chalotas, 160 ml. de vino blanco seco, 1'5 litros de caldo de verduras y
-jamón, 250 gramos de mozzarella fresca, 100 gramos de tomates secos en
-aceite <http://www.gastronomiaycia.com/2010/12/20/tomates-secos-en-aceite/> (se
-puede variar la cantidad al gusto, según lo hidratados que estén los
-tomates, su peso variará), 1 c/s de tomillo fresco (las hojas), pimienta
-negra recién molida, parmesano recién rallado,sal, aceite de oliva virgen
-extra.
-Elaboración
+### Elaboración
 
 Pela las chalotas, córtalas por la mitad a lo largo y después pícala bien
 fina. Pon el caldo a calentar en el microondas o en un cazo. Escurre la
@@ -69,8 +73,6 @@ Pon una cazuela al fuego con el mismo aceite de los tomates, añade los
 tomates y la chalota, y pocha a fuego suave hasta que ésta esté
 transparente. Añade el arroz y sube un poco el fuego, no dejes de remover y
 cuando esté nacarado, añade el vino, deja reducir moviendo de vez en cuando.
-[image: Risotto de mozzarella y tomate seco]
-<http://www.gastronomiaycia.com/fotos/risotto-de-mozzarella-y-tomate-seco/risotto_mozzarella_tomate4.jpg>
 
 Una vez que el arroz se haya quedado seco, empieza a incorporar el caldo
 caliente poco a poco, es decir, de vaso en vaso, vierte el primero y ve

@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Arroz basmati con berenjena y almendras
 
 [img]: #()
 
@@ -20,13 +20,33 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 500 gramos de berenjena
+*  60 gramos de ajos tiernos
+*  1 trozo de raíz de
+jengibre (una nuez)
+*  60 gramos de almendra entera cruda (Marcona)
+*  ½ c/c de
+nuez moscada recién rallada
+*  ½ c/c de pimienta negra recién molida
+*  ½ c/c
+de chile en polvo
+*  ¼ c/c de comino en polvo
+*  ½ c/c de lemon grass en polvo
+* 120 gramos de salsa de soja dulce (Kecap manis)
+*  200 gramos de agua
+*  unas
+ramitas de menta fresca
+*  1-2 c/s de aceite de sésamo
+*  c/n de aceite de
+oliva virgen extra
+* sal.
+
 
 
 [content]: #()
 
-
-http://www.gastronomiaycia.com/2014/09/01/arroz-basmati-con-berenjena-y-almendras/
 
 Un entrante ideal para un lunes sin carne o para cualquier día que se
 quiera disfrutar del Arroz basmati con berenjena y almendras que os
@@ -42,17 +62,8 @@ este Arroz con berenjena y almendras como entrante, pero también podéis
 servirlo como guarnición de carne o pescado, haciendo un plato único muy
 rico y completo.
 
-Ingredientes (4 comensales)
 
-500 gramos de berenjena, 60 gramos de ajos tiernos, 1 trozo de raíz de
-jengibre (una nuez), 60 gramos de almendra entera cruda (Marcona), ½ c/c de
-nuez moscada recién rallada, ½ c/c de pimienta negra recién molida, ½ c/c
-de chile en polvo, ¼ c/c de comino en polvo, ½ c/c de lemon grass en polvo,
-120 gramos de salsa de soja dulce (Kecap manis), 200 gramos de agua, unas
-ramitas de menta fresca, 1-2 c/s de aceite de sésamo, c/n de aceite de
-oliva virgen extra, sal.
-
-Elaboración
+### Elaboración
 
 Lava bien la berenjena, corta los dos extremos y después córtala en dados.
 Ponla en un recipiente con sal y déjala reposar unos diez minutos para

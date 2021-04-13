@@ -1,6 +1,6 @@
 [title]: #()
 
-## 
+## Muslos de pollo con naranja
 
 [img]: #()
 
@@ -20,7 +20,31 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 8 muslos de pollo
+* 150 gramos de zumo de naranja natural
+* 40 gramos de
+salsa de soja
+* 2 chalotas
+* guindilla
+o chile seco molido
+* aceite de oliva virgen extra
+* sal.
+
+Salsa de aguacate
+
+* 2 aguacates
+* 40 gramos de tomates secos en aceite
+* ½ cebolla morada
+* 1 c/c
+rasa de jengibre en polvo
+* pimienta negra recién molida
+* 2 c/s de zumo de
+naranja natural
+* 1 c/s de zumo de limón natural
+* chile o guindilla al gusto
+*  sal.
 
 
 [content]: #()
@@ -36,21 +60,9 @@ más tiempo que hacer el tradicional *pollo al ajillo*, lo que seguramente
 conseguirás es sorprender a tus comensales con estos *Muslos de pollo con
 naranja y soja*. No dejes de comprar o hacer un buen pan para no dejar
 rastro de la salsa en el plato.
-Ingredientes (4 comensales)
 
-8 muslos de pollo, 150 gramos de zumo de naranja natural, 40 gramos de
-salsa de soja, 2 chalotas
-<http://www.gastronomiaycia.com/2008/09/05/chalotas-o-escalonias/>, guindilla
-o chile seco molido,aceite de oliva virgen extra, sal.
 
-Salsa de aguacate
-
-2 aguacates, 40 gramos de tomates secos en aceite, ½ cebolla morada, 1 c/c
-rasa de jengibre en polvo, pimienta negra recién molida, 2 c/s de zumo de
-naranja natural, 1 c/s de zumo de limón natural, chile o guindilla al gusto
-, sal.
-
-Elaboración
+### Elaboración
 
 Limpia los muslos de pollo, retírales la piel y sálalos ligeramente.
 Prepara el zumo de naranja y pela y pica las chalotas.
@@ -62,8 +74,6 @@ dóralos de forma homogénea, dándoles la vuelta de vez en cuando.
 Cuando la superficie esté dorada, reduce el fuego y añade la chalota para
 que se poche ligeramente, cuando empiece a transparentar, añade el zumo de
 naranja mezclado con la salsa de soja y la guindilla.
-[image: Muslos de pollo con naranja y soja]
-<http://www.gastronomiaycia.com/fotos/recetas/muslos_pollonaranjasoja2.jpg>
 
 Deja cocer a fuego medio, tapando la sartén pero sin encajarla, dejando una
 pequeña salida para el vapor. Si al terminar la cocción del pollo queda el

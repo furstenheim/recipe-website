@@ -1,6 +1,7 @@
 [title]: #()
 
-## 
+## Macarrones con bacon, mango y queso azul
+
 
 [img]: #()
 
@@ -20,19 +21,24 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 400 gramos de macarrones
+* 1 mango
+* 6-8 lonchas de bacon
+* 1 diente de ajo
+* 125 gramos de queso azul
+* 100-120 gramos de queso crema
+* nueces (opcional)
+* pimienta negra
+* sal.
+
+
 
 
 [content]: #()
 
 
-Macarrones con bacon, mango y queso azul
-￼VelSid
-27 SEP 2012
-0Comentar
-Pin It
-￼
-￼
 Vamos con unos macarrones que harán que una comida de diario sepa a
 festivo, porque estos Macarrones con bacon, mango y queso azul van a ser el
 capricho de muchos apasionados de la pasta, amantes del queso, locos por
@@ -47,13 +53,7 @@ jugosidad y frescor. Es un entrante muy completo, con un importante aporte
 energético, así que si se acompaña de otro plato, que sean unas hortalizas
 o verduras.
 
-Ingredientes (4 comensales)
-
-400 gramos de macarrones, 1 mango, 6-8 lonchas de bacon, 1 diente de ajo,
-125 gramos de queso azul, 100-120 gramos de queso crema, nueces (opcional),
-pimienta negra, sal.
-
-Elaboración
+### Elaboración
 
 Pon una olla con abundante agua para cocer la pasta, cuando rompa a hervir
 añade sal y a continuación la pasta, muévela para que no se pegue y baja el

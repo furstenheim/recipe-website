@@ -1,6 +1,7 @@
 [title]: #()
 
-## 
+## Risotto con boletus confitados
+
 
 [img]: #()
 
@@ -20,22 +21,33 @@ CookingTime:
 
 [ingredients-content]: #()
 
-### 
+### Ingredientes (4 comensales)
+    
+* 400 gramos de arroz carnaroli (o arborio, baldo…)
+* 200 ml. de vino blanco
+* 1 puerro
+* 2 dientes de ajo
+* 1 nabo
+* 1 c/s de Bovril
+* 60 gramos de boletus
+edulis deshidratados
+* 1 litro de caldo vegetal (restar al caldo el agua en
+la que se han rehidratado los boletus)
+* 80 gramos de queso parmesano
+* 1 c/p
+de cúrcuma
+* ½ c/p de pimienta de Jamaica
+* tomillo
+* 2 c/s de sirope de arce
+* 2 c/s de miel
+* aceite de oliva virgen extra
+* sal.
+
 
 
 [content]: #()
 
 
-Risotto con boletus confitados
-Receta de risotto con boletus confitados y aromatizados con miel y tomillo,
-elaboración paso a paso con fotos y consejos para hacer un risotto cremoso
-y muy sabroso.
-￼VelSid
-12 FEB 2010
-6Comentar
-Pin It
-￼
-￼
 Se nos ha pasado la semana casi sin darnos cuenta de que no habíamos comido
 risotto, la verdad es que hemos disfrutado mucho de todos los menús, pero
 el cuerpo ya nos pedía un Risotto con boletus confitados, un plato ideal
@@ -49,16 +61,8 @@ la crujibilidad y un contraste refrescante y ligeramente picante en el
 nabo, que a su vez se suaviza con el queso, pero si no es del agrado de los
 comensales, se puede prescindir de él.
 
-Ingredientes (4 comensales)
 
-400 gramos de arroz carnaroli (o arborio, baldo…), 200 ml. de vino blanco,
-1 puerro, 2 dientes de ajo, 1 nabo, 1 c/s de Bovril, 60 gramos de boletus
-edulis deshidratados, 1 litro de caldo vegetal (restar al caldo el agua en
-la que se han rehidratado los boletus), 80 gramos de queso parmesano, 1 c/p
-de cúrcuma, ½ c/p de pimienta de Jamaica, tomillo, 2 c/s de sirope de arce,
-2 c/s de miel, aceite de oliva virgen extra, sal.
-
-Elaboración
+### Elaboración
 
 Pon los boletus o ceps en agua tibia para que se rehidraten unas horas
 antes. Cuando vaya a ponerte a cocinar, escurre bien las setas y añade el
@@ -88,7 +92,7 @@ de caldo, deja reposar un par de minutos antes de servir.
 
 Retira los boletus del cazo en el que estaban confitando.
 
-Emplatado
+### Emplatado
 
 Sirve el risotto bien cremoso y acompáñalo con los boletus confitados.
 Puedes terminar con un poco más de queso parmesano rallado o en lascas si
