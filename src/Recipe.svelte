@@ -3,6 +3,9 @@ import SvelteMarkdown from 'svelte-markdown'
 import type { Recipe } from './recipe'
 import {afterUpdate, onMount} from 'svelte'
 import copy from 'copy-html-to-clipboard'
+import CountDown from './Countdown.svelte'
+
+import * as dayjs from 'dayjs'
 export let params = {
   recipeId: ''
 }
@@ -15,8 +18,30 @@ onMount(async function () {
   console.log(recipe)
 })
 let isSideIngredientsOpen = false
-function toggleOpen () {
-  isSideIngredientsOpen = !isSideIngredientsOpen
+let isSideTimersOpen = false
+let isSidePanelOpen: boolean
+$: isSidePanelOpen = isSideTimersOpen || isSideIngredientsOpen
+
+const countDowns: [{title: string, timer: dayjs.Dayjs}] = [{title: 'AAA', timer: dayjs.default().add(10, 'seconds')}]
+
+
+function toggleIngredientsOpen () {
+  if (isSidePanelOpen && isSideIngredientsOpen) {
+    isSideIngredientsOpen = false
+    isSideTimersOpen = false
+  } else {
+    isSideIngredientsOpen = true
+    isSideTimersOpen = false
+  }
+}
+function toggleTimersOpen () {
+  if (isSidePanelOpen && isSideTimersOpen) {
+    isSideTimersOpen = false
+    isSideIngredientsOpen = false
+  } else {
+    isSideTimersOpen = true
+    isSideIngredientsOpen = false
+  }
 }
 
 afterUpdate(function () {
@@ -44,11 +69,25 @@ function copyIngredients () {
 }
 </script>
 {#if recipe}
-  <div class="ingredients-side-panel" class:ingredients-side-panel--open="{isSideIngredientsOpen}" >
+  <div class="ingredients-side-panel side-panel" class:side-panel--open="{isSidePanelOpen}"
+  class:side-panel--on-top={isSideIngredientsOpen}
+  >
     <SvelteMarkdown source="{recipe.ingredientsContent}" />
   </div>
-  <div class="ingredients-content-handler" on:click={toggleOpen} class:ingredients-content-handler-opener--open="{isSideIngredientsOpen}">
-    <p class="ingredients-content-handler-opener">Ingredients</p>
+
+  <div class="timeouts-side-panel side-panel" class:side-panel--open="{isSidePanelOpen}"
+    class:side-panel--on-top={isSideTimersOpen}
+  >
+    <h2>Timers</h2>
+    {#each countDowns as countDown}
+      <CountDown timeEnd="{countDown.timer}" title="{countDown.title}"/>
+    {/each}
+  </div>
+  <div class="side-content-handler ingredients-content-handler" on:click={toggleIngredientsOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
+    <p class="side-content-handler-opener">Ingredients</p>
+  </div>
+  <div class="side-content-handler timeouts-content-handler" on:click={toggleTimersOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
+    <p class="side-content-handler-opener">Timers</p>
   </div>
 
 
@@ -95,7 +134,7 @@ function copyIngredients () {
     }
 
 
-    .ingredients-side-panel {
+    .side-panel {
         color: white;
         align-items: center;
         box-sizing: border-box;
@@ -112,33 +151,46 @@ function copyIngredients () {
         transition-duration: 500ms;
     }
 
-    .ingredients-side-panel--open {
+
+    .side-panel--open {
         transition-timing-function: ease-in-out;
         transition-duration: 500ms;
         left: 0vw;
     }
 
+    .side-panel--on-top {
+        z-index: 100;
+    }
 
-    .ingredients-content-handler {
+
+
+    .side-content-handler {
         position: fixed;
         display: flex;
         transform: rotate(90deg);
         transform-origin: bottom left;
         margin: 0px;
-        top: 80vh;
-        left:0vw;
 
         transition-timing-function: ease-in-out;
         transition-duration: 500ms;
     }
 
-    .ingredients-content-handler-opener--open {
+    .ingredients-content-handler {
+        top: 80vh;
+        left:0vw;
+    }
+    .timeouts-content-handler {
+        top: 70vh;
+        left:0vw;
+    }
+
+    .side-content-handler-opener--open {
         transition-timing-function: ease-in-out;
         transition-duration: 500ms;
         left:min(max(min(50vw, 500px), 300px), 100vw);
     }
 
-    .ingredients-content-handler:after {
+    .side-content-handler:after {
         position: absolute;
         content: '\00a0';
         left: -10px;
@@ -151,10 +203,10 @@ function copyIngredients () {
         border-right: 1px solid lightgrey;
         background: #b4c6d7;
         transform: perspective(100px) rotateX(40deg);
-
     }
 
-    .ingredients-content-handler-opener {
+
+    .side-content-handler-opener {
         color: white;
         position: relative;
         text-align: center;

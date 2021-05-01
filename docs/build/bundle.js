@@ -3314,7 +3314,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    function get_each_context$1(ctx, list, i) {
+    function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[4] = list[i];
     	return child_ctx;
@@ -3410,7 +3410,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
     	}
 
     	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -3440,13 +3440,13 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$1(ctx, each_value, i);
+    					const child_ctx = get_each_context$2(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     						transition_in(each_blocks[i], 1);
     					} else {
-    						each_blocks[i] = create_each_block$1(child_ctx);
+    						each_blocks[i] = create_each_block$2(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
@@ -5123,7 +5123,7 @@ var app = (function () {
     }
 
     // (8:2) {#each tokens as token}
-    function create_each_block$1(ctx) {
+    function create_each_block$2(ctx) {
     	let parser;
     	let current;
     	const parser_spread_levels = [/*token*/ ctx[4], { renderers: /*renderers*/ ctx[2] }];
@@ -5169,7 +5169,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$1.name,
+    		id: create_each_block$2.name,
     		type: "each",
     		source: "(8:2) {#each tokens as token}",
     		ctx
@@ -8514,43 +8514,371 @@ var app = (function () {
 
     var copyHtmlToClipboard = copy;
 
+    var dayjs_min = createCommonjsModule(function (module, exports) {
+    !function(t,e){module.exports=e();}(commonjsGlobal,function(){var t="millisecond",e="second",n="minute",r="hour",i="day",s="week",u="month",a="quarter",o="year",f="date",h=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,c=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,d={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},$=function(t,e,n){var r=String(t);return !r||r.length>=e?t:""+Array(e+1-r.length).join(n)+t},l={s:$,z:function(t){var e=-t.utcOffset(),n=Math.abs(e),r=Math.floor(n/60),i=n%60;return (e<=0?"+":"-")+$(r,2,"0")+":"+$(i,2,"0")},m:function t(e,n){if(e.date()<n.date())return -t(n,e);var r=12*(n.year()-e.year())+(n.month()-e.month()),i=e.clone().add(r,u),s=n-i<0,a=e.clone().add(r+(s?-1:1),u);return +(-(r+(n-i)/(s?i-a:a-i))||0)},a:function(t){return t<0?Math.ceil(t)||0:Math.floor(t)},p:function(h){return {M:u,y:o,w:s,d:i,D:f,h:r,m:n,s:e,ms:t,Q:a}[h]||String(h||"").toLowerCase().replace(/s$/,"")},u:function(t){return void 0===t}},y="en",M={};M[y]=d;var m=function(t){return t instanceof S},D=function(t,e,n){var r;if(!t)return y;if("string"==typeof t)M[t]&&(r=t),e&&(M[t]=e,r=t);else {var i=t.name;M[i]=t,r=i;}return !n&&r&&(y=r),r||!n&&y},v=function(t,e){if(m(t))return t.clone();var n="object"==typeof e?e:{};return n.date=t,n.args=arguments,new S(n)},g=l;g.l=D,g.i=m,g.w=function(t,e){return v(t,{locale:e.$L,utc:e.$u,x:e.$x,$offset:e.$offset})};var S=function(){function d(t){this.$L=D(t.locale,null,!0),this.parse(t);}var $=d.prototype;return $.parse=function(t){this.$d=function(t){var e=t.date,n=t.utc;if(null===e)return new Date(NaN);if(g.u(e))return new Date;if(e instanceof Date)return new Date(e);if("string"==typeof e&&!/Z$/i.test(e)){var r=e.match(h);if(r){var i=r[2]-1||0,s=(r[7]||"0").substring(0,3);return n?new Date(Date.UTC(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)):new Date(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)}}return new Date(e)}(t),this.$x=t.x||{},this.init();},$.init=function(){var t=this.$d;this.$y=t.getFullYear(),this.$M=t.getMonth(),this.$D=t.getDate(),this.$W=t.getDay(),this.$H=t.getHours(),this.$m=t.getMinutes(),this.$s=t.getSeconds(),this.$ms=t.getMilliseconds();},$.$utils=function(){return g},$.isValid=function(){return !("Invalid Date"===this.$d.toString())},$.isSame=function(t,e){var n=v(t);return this.startOf(e)<=n&&n<=this.endOf(e)},$.isAfter=function(t,e){return v(t)<this.startOf(e)},$.isBefore=function(t,e){return this.endOf(e)<v(t)},$.$g=function(t,e,n){return g.u(t)?this[e]:this.set(n,t)},$.unix=function(){return Math.floor(this.valueOf()/1e3)},$.valueOf=function(){return this.$d.getTime()},$.startOf=function(t,a){var h=this,c=!!g.u(a)||a,d=g.p(t),$=function(t,e){var n=g.w(h.$u?Date.UTC(h.$y,e,t):new Date(h.$y,e,t),h);return c?n:n.endOf(i)},l=function(t,e){return g.w(h.toDate()[t].apply(h.toDate("s"),(c?[0,0,0,0]:[23,59,59,999]).slice(e)),h)},y=this.$W,M=this.$M,m=this.$D,D="set"+(this.$u?"UTC":"");switch(d){case o:return c?$(1,0):$(31,11);case u:return c?$(1,M):$(0,M+1);case s:var v=this.$locale().weekStart||0,S=(y<v?y+7:y)-v;return $(c?m-S:m+(6-S),M);case i:case f:return l(D+"Hours",0);case r:return l(D+"Minutes",1);case n:return l(D+"Seconds",2);case e:return l(D+"Milliseconds",3);default:return this.clone()}},$.endOf=function(t){return this.startOf(t,!1)},$.$set=function(s,a){var h,c=g.p(s),d="set"+(this.$u?"UTC":""),$=(h={},h[i]=d+"Date",h[f]=d+"Date",h[u]=d+"Month",h[o]=d+"FullYear",h[r]=d+"Hours",h[n]=d+"Minutes",h[e]=d+"Seconds",h[t]=d+"Milliseconds",h)[c],l=c===i?this.$D+(a-this.$W):a;if(c===u||c===o){var y=this.clone().set(f,1);y.$d[$](l),y.init(),this.$d=y.set(f,Math.min(this.$D,y.daysInMonth())).$d;}else $&&this.$d[$](l);return this.init(),this},$.set=function(t,e){return this.clone().$set(t,e)},$.get=function(t){return this[g.p(t)]()},$.add=function(t,a){var f,h=this;t=Number(t);var c=g.p(a),d=function(e){var n=v(h);return g.w(n.date(n.date()+Math.round(e*t)),h)};if(c===u)return this.set(u,this.$M+t);if(c===o)return this.set(o,this.$y+t);if(c===i)return d(1);if(c===s)return d(7);var $=(f={},f[n]=6e4,f[r]=36e5,f[e]=1e3,f)[c]||1,l=this.$d.getTime()+t*$;return g.w(l,this)},$.subtract=function(t,e){return this.add(-1*t,e)},$.format=function(t){var e=this;if(!this.isValid())return "Invalid Date";var n=t||"YYYY-MM-DDTHH:mm:ssZ",r=g.z(this),i=this.$locale(),s=this.$H,u=this.$m,a=this.$M,o=i.weekdays,f=i.months,h=function(t,r,i,s){return t&&(t[r]||t(e,n))||i[r].substr(0,s)},d=function(t){return g.s(s%12||12,t,"0")},$=i.meridiem||function(t,e,n){var r=t<12?"AM":"PM";return n?r.toLowerCase():r},l={YY:String(this.$y).slice(-2),YYYY:this.$y,M:a+1,MM:g.s(a+1,2,"0"),MMM:h(i.monthsShort,a,f,3),MMMM:h(f,a),D:this.$D,DD:g.s(this.$D,2,"0"),d:String(this.$W),dd:h(i.weekdaysMin,this.$W,o,2),ddd:h(i.weekdaysShort,this.$W,o,3),dddd:o[this.$W],H:String(s),HH:g.s(s,2,"0"),h:d(1),hh:d(2),a:$(s,u,!0),A:$(s,u,!1),m:String(u),mm:g.s(u,2,"0"),s:String(this.$s),ss:g.s(this.$s,2,"0"),SSS:g.s(this.$ms,3,"0"),Z:r};return n.replace(c,function(t,e){return e||l[t]||r.replace(":","")})},$.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},$.diff=function(t,f,h){var c,d=g.p(f),$=v(t),l=6e4*($.utcOffset()-this.utcOffset()),y=this-$,M=g.m(this,$);return M=(c={},c[o]=M/12,c[u]=M,c[a]=M/3,c[s]=(y-l)/6048e5,c[i]=(y-l)/864e5,c[r]=y/36e5,c[n]=y/6e4,c[e]=y/1e3,c)[d]||y,h?M:g.a(M)},$.daysInMonth=function(){return this.endOf(u).$D},$.$locale=function(){return M[this.$L]},$.locale=function(t,e){if(!t)return this.$L;var n=this.clone(),r=D(t,e,!0);return r&&(n.$L=r),n},$.clone=function(){return g.w(this.$d,this)},$.toDate=function(){return new Date(this.valueOf())},$.toJSON=function(){return this.isValid()?this.toISOString():null},$.toISOString=function(){return this.$d.toISOString()},$.toString=function(){return this.$d.toUTCString()},d}(),p=S.prototype;return v.prototype=p,[["$ms",t],["$s",e],["$m",n],["$H",r],["$W",i],["$M",u],["$y",o],["$D",f]].forEach(function(t){p[t[1]]=function(e){return this.$g(e,t[0],t[1])};}),v.extend=function(t,e){return t.$i||(t(e,S,v),t.$i=!0),v},v.locale=D,v.isDayjs=m,v.unix=function(t){return v(1e3*t)},v.en=M[y],v.Ls=M,v.p={},v});
+    });
+
+    var dayjs = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), dayjs_min, {
+        'default': dayjs_min
+    }));
+
+    /* src/Countdown.svelte generated by Svelte v3.35.0 */
+    const file$3 = "src/Countdown.svelte";
+
+    function create_fragment$5(ctx) {
+    	let div1;
+    	let h4;
+    	let t0;
+    	let t1;
+    	let div0;
+    	let span0;
+    	let t2;
+    	let t3;
+    	let span1;
+    	let t4;
+    	let t5;
+    	let button0;
+    	let t7;
+    	let button1;
+    	let t9;
+    	let button2;
+    	let t11;
+    	let button3;
+    	let t13;
+    	let audio;
+    	let audio_src_value;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div1 = element("div");
+    			h4 = element("h4");
+    			t0 = text(/*title*/ ctx[0]);
+    			t1 = space();
+    			div0 = element("div");
+    			span0 = element("span");
+    			t2 = text(/*minutes*/ ctx[2]);
+    			t3 = space();
+    			span1 = element("span");
+    			t4 = text(/*seconds*/ ctx[3]);
+    			t5 = space();
+    			button0 = element("button");
+    			button0.textContent = "+10 m";
+    			t7 = space();
+    			button1 = element("button");
+    			button1.textContent = "+1 m";
+    			t9 = space();
+    			button2 = element("button");
+    			button2.textContent = "+10 s";
+    			t11 = space();
+    			button3 = element("button");
+    			button3.textContent = "X";
+    			t13 = space();
+    			audio = element("audio");
+    			attr_dev(h4, "class", "title svelte-1fxdx28");
+    			add_location(h4, file$3, 58, 2, 1291);
+    			attr_dev(span0, "class", "minutes");
+    			add_location(span0, file$3, 60, 4, 1347);
+    			attr_dev(span1, "class", "seconds");
+    			add_location(span1, file$3, 61, 4, 1390);
+    			attr_dev(div0, "class", "time svelte-1fxdx28");
+    			add_location(div0, file$3, 59, 2, 1324);
+    			add_location(button0, file$3, 63, 2, 1440);
+    			add_location(button1, file$3, 64, 2, 1510);
+    			add_location(button2, file$3, 65, 2, 1578);
+    			add_location(button3, file$3, 66, 2, 1648);
+    			audio.loop = "true";
+    			if (audio.src !== (audio_src_value = "sound/default.mp3")) attr_dev(audio, "src", audio_src_value);
+    			add_location(audio, file$3, 67, 2, 1690);
+    			attr_dev(div1, "class", "countdown");
+    			add_location(div1, file$3, 57, 0, 1265);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, h4);
+    			append_dev(h4, t0);
+    			append_dev(div1, t1);
+    			append_dev(div1, div0);
+    			append_dev(div0, span0);
+    			append_dev(span0, t2);
+    			append_dev(div0, t3);
+    			append_dev(div0, span1);
+    			append_dev(span1, t4);
+    			append_dev(div1, t5);
+    			append_dev(div1, button0);
+    			append_dev(div1, t7);
+    			append_dev(div1, button1);
+    			append_dev(div1, t9);
+    			append_dev(div1, button2);
+    			append_dev(div1, t11);
+    			append_dev(div1, button3);
+    			append_dev(div1, t13);
+    			append_dev(div1, audio);
+    			/*audio_binding*/ ctx[11](audio);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(button0, "click", /*click_handler*/ ctx[8], false, false, false),
+    					listen_dev(button1, "click", /*click_handler_1*/ ctx[9], false, false, false),
+    					listen_dev(button2, "click", /*click_handler_2*/ ctx[10], false, false, false),
+    					listen_dev(button3, "click", /*stopAlarm*/ ctx[4], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*title*/ 1) set_data_dev(t0, /*title*/ ctx[0]);
+    			if (dirty & /*minutes*/ 4) set_data_dev(t2, /*minutes*/ ctx[2]);
+    			if (dirty & /*seconds*/ 8) set_data_dev(t4, /*seconds*/ ctx[3]);
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div1);
+    			/*audio_binding*/ ctx[11](null);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$5.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$5($$self, $$props, $$invalidate) {
+    	let minutes;
+    	let seconds;
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Countdown", slots, []);
+    	let { timeEnd = null } = $$props;
+    	let { title = "" } = $$props;
+    	let timeDiff = getDiff();
+    	let player = null;
+    	let timer = null;
+    	let stopped = false;
+
+    	onMount(function () {
+    		timer = setInterval(function () {
+    			$$invalidate(7, timeDiff = getDiff());
+    		});
+    	});
+
+    	onDestroy(() => {
+    		if (timer) {
+    			clearInterval(timer);
+    		}
+    	});
+
+    	function stopAlarm() {
+    		stopped = true;
+    		if (player) player.pause();
+    		$$invalidate(6, timeEnd = dayjs_min());
+    	} // TODO emit element to remove clockdown
+
+    	function increaseAlarm(time, amount) {
+    		if (player) {
+    			player.pause();
+    		}
+
+    		stopped = false;
+    		const now = dayjs_min();
+
+    		if (timeEnd.diff(now) < 0) {
+    			$$invalidate(6, timeEnd = now);
+    		}
+
+    		$$invalidate(6, timeEnd = timeEnd.add(time, amount));
+    	}
+
+    	function getDiff() {
+    		const now = dayjs_min();
+
+    		if (timeEnd.diff(now) < 0) {
+    			if (!stopped) {
+    				player.play();
+    			}
+
+    			return { minutes: 0, seconds: "00" };
+    		}
+
+    		return {
+    			minutes: timeEnd.diff(now, "minutes"),
+    			seconds: ("" + timeEnd.diff(now, "seconds") % 60).padStart(2, "0")
+    		};
+    	}
+
+    	const writable_props = ["timeEnd", "title"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Countdown> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = () => increaseAlarm(10, "minute");
+    	const click_handler_1 = () => increaseAlarm(1, "minute");
+    	const click_handler_2 = () => increaseAlarm(10, "second");
+
+    	function audio_binding($$value) {
+    		binding_callbacks[$$value ? "unshift" : "push"](() => {
+    			player = $$value;
+    			$$invalidate(1, player);
+    		});
+    	}
+
+    	$$self.$$set = $$props => {
+    		if ("timeEnd" in $$props) $$invalidate(6, timeEnd = $$props.timeEnd);
+    		if ("title" in $$props) $$invalidate(0, title = $$props.title);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		dayjs,
+    		onDestroy,
+    		onMount,
+    		timeEnd,
+    		title,
+    		timeDiff,
+    		player,
+    		timer,
+    		stopped,
+    		stopAlarm,
+    		increaseAlarm,
+    		getDiff,
+    		minutes,
+    		seconds
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("timeEnd" in $$props) $$invalidate(6, timeEnd = $$props.timeEnd);
+    		if ("title" in $$props) $$invalidate(0, title = $$props.title);
+    		if ("timeDiff" in $$props) $$invalidate(7, timeDiff = $$props.timeDiff);
+    		if ("player" in $$props) $$invalidate(1, player = $$props.player);
+    		if ("timer" in $$props) timer = $$props.timer;
+    		if ("stopped" in $$props) stopped = $$props.stopped;
+    		if ("minutes" in $$props) $$invalidate(2, minutes = $$props.minutes);
+    		if ("seconds" in $$props) $$invalidate(3, seconds = $$props.seconds);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*timeDiff*/ 128) {
+    			$$invalidate(2, minutes = timeDiff.minutes);
+    		}
+
+    		if ($$self.$$.dirty & /*timeDiff*/ 128) {
+    			$$invalidate(3, seconds = timeDiff.seconds);
+    		}
+    	};
+
+    	return [
+    		title,
+    		player,
+    		minutes,
+    		seconds,
+    		stopAlarm,
+    		increaseAlarm,
+    		timeEnd,
+    		timeDiff,
+    		click_handler,
+    		click_handler_1,
+    		click_handler_2,
+    		audio_binding
+    	];
+    }
+
+    class Countdown extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { timeEnd: 6, title: 0 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Countdown",
+    			options,
+    			id: create_fragment$5.name
+    		});
+    	}
+
+    	get timeEnd() {
+    		throw new Error("<Countdown>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set timeEnd(value) {
+    		throw new Error("<Countdown>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get title() {
+    		throw new Error("<Countdown>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set title(value) {
+    		throw new Error("<Countdown>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
     /* src/Recipe.svelte generated by Svelte v3.35.0 */
 
     const { console: console_1$2 } = globals;
-    const file$3 = "src/Recipe.svelte";
+    const file$2 = "src/Recipe.svelte";
 
-    // (51:0) {#if recipe}
+    function get_each_context$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[11] = list[i];
+    	return child_ctx;
+    }
+
+    // (74:0) {#if recipe}
     function create_if_block$2(ctx) {
     	let div0;
     	let sveltemarkdown0;
     	let t0;
     	let div1;
-    	let p0;
+    	let h2;
     	let t2;
-    	let div6;
-    	let div2;
-    	let sveltemarkdown1;
     	let t3;
-    	let div5;
-    	let sveltemarkdown2;
-    	let t4;
-    	let sveltemarkdown3;
+    	let div2;
+    	let p0;
     	let t5;
     	let div3;
     	let p1;
-    	let t6;
-    	let t7_value = /*recipe*/ ctx[0].recipeTime.cookingTime + "";
     	let t7;
-    	let t8;
-    	let p2;
-    	let t9;
-    	let t10_value = /*recipe*/ ctx[0].recipeTime.totalTime + "";
-    	let t10;
-    	let t11;
-    	let t12;
+    	let div8;
     	let div4;
-    	let sveltemarkdown4;
+    	let sveltemarkdown1;
+    	let t8;
+    	let div7;
+    	let sveltemarkdown2;
+    	let t9;
+    	let sveltemarkdown3;
+    	let t10;
+    	let div5;
+    	let p2;
+    	let t11;
+    	let t12_value = /*recipe*/ ctx[2].recipeTime.cookingTime + "";
+    	let t12;
     	let t13;
+    	let p3;
+    	let t14;
+    	let t15_value = /*recipe*/ ctx[2].recipeTime.totalTime + "";
+    	let t15;
+    	let t16;
+    	let t17;
+    	let div6;
+    	let sveltemarkdown4;
+    	let t18;
     	let sveltemarkdown5;
     	let current;
     	let mounted;
@@ -8558,39 +8886,51 @@ var app = (function () {
 
     	sveltemarkdown0 = new SvelteMarkdown({
     			props: {
-    				source: /*recipe*/ ctx[0].ingredientsContent
+    				source: /*recipe*/ ctx[2].ingredientsContent
     			},
     			$$inline: true
     		});
 
+    	let each_value = /*countDowns*/ ctx[4];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
     	sveltemarkdown1 = new SvelteMarkdown({
     			props: {
-    				source: /*recipe*/ ctx[0].ingredientsContent
+    				source: /*recipe*/ ctx[2].ingredientsContent
     			},
     			$$inline: true
     		});
 
     	sveltemarkdown2 = new SvelteMarkdown({
-    			props: { source: /*recipe*/ ctx[0].title },
+    			props: { source: /*recipe*/ ctx[2].title },
     			$$inline: true
     		});
 
     	sveltemarkdown3 = new SvelteMarkdown({
-    			props: { source: /*recipe*/ ctx[0].img },
+    			props: { source: /*recipe*/ ctx[2].img },
     			$$inline: true
     		});
 
-    	let if_block = /*recipe*/ ctx[0].recipeTime.isStartPreviousDay && create_if_block_1(ctx);
+    	let if_block = /*recipe*/ ctx[2].recipeTime.isStartPreviousDay && create_if_block_1(ctx);
 
     	sveltemarkdown4 = new SvelteMarkdown({
     			props: {
-    				source: /*recipe*/ ctx[0].ingredientsContent
+    				source: /*recipe*/ ctx[2].ingredientsContent
     			},
     			$$inline: true
     		});
 
     	sveltemarkdown5 = new SvelteMarkdown({
-    			props: { source: /*recipe*/ ctx[0].content },
+    			props: { source: /*recipe*/ ctx[2].content },
     			$$inline: true
     		});
 
@@ -8600,121 +8940,206 @@ var app = (function () {
     			create_component(sveltemarkdown0.$$.fragment);
     			t0 = space();
     			div1 = element("div");
+    			h2 = element("h2");
+    			h2.textContent = "Timers";
+    			t2 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t3 = space();
+    			div2 = element("div");
     			p0 = element("p");
     			p0.textContent = "Ingredients";
-    			t2 = space();
-    			div6 = element("div");
-    			div2 = element("div");
-    			create_component(sveltemarkdown1.$$.fragment);
-    			t3 = space();
-    			div5 = element("div");
-    			create_component(sveltemarkdown2.$$.fragment);
-    			t4 = space();
-    			create_component(sveltemarkdown3.$$.fragment);
     			t5 = space();
     			div3 = element("div");
     			p1 = element("p");
-    			t6 = text("Cooking Time: ");
-    			t7 = text(t7_value);
-    			t8 = space();
-    			p2 = element("p");
-    			t9 = text("Total Time: ");
-    			t10 = text(t10_value);
-    			t11 = space();
-    			if (if_block) if_block.c();
-    			t12 = space();
+    			p1.textContent = "Timers";
+    			t7 = space();
+    			div8 = element("div");
     			div4 = element("div");
-    			create_component(sveltemarkdown4.$$.fragment);
+    			create_component(sveltemarkdown1.$$.fragment);
+    			t8 = space();
+    			div7 = element("div");
+    			create_component(sveltemarkdown2.$$.fragment);
+    			t9 = space();
+    			create_component(sveltemarkdown3.$$.fragment);
+    			t10 = space();
+    			div5 = element("div");
+    			p2 = element("p");
+    			t11 = text("Cooking Time: ");
+    			t12 = text(t12_value);
     			t13 = space();
+    			p3 = element("p");
+    			t14 = text("Total Time: ");
+    			t15 = text(t15_value);
+    			t16 = space();
+    			if (if_block) if_block.c();
+    			t17 = space();
+    			div6 = element("div");
+    			create_component(sveltemarkdown4.$$.fragment);
+    			t18 = space();
     			create_component(sveltemarkdown5.$$.fragment);
-    			attr_dev(div0, "class", "ingredients-side-panel svelte-s5fwi3");
-    			toggle_class(div0, "ingredients-side-panel--open", /*isSideIngredientsOpen*/ ctx[1]);
-    			add_location(div0, file$3, 51, 2, 2055);
-    			attr_dev(p0, "class", "ingredients-content-handler-opener svelte-s5fwi3");
-    			add_location(p0, file$3, 55, 4, 2366);
-    			attr_dev(div1, "class", "ingredients-content-handler svelte-s5fwi3");
-    			toggle_class(div1, "ingredients-content-handler-opener--open", /*isSideIngredientsOpen*/ ctx[1]);
-    			add_location(div1, file$3, 54, 2, 2225);
-    			attr_dev(div2, "class", "side-ingredients svelte-s5fwi3");
-    			add_location(div2, file$3, 60, 4, 2476);
-    			add_location(p1, file$3, 69, 14, 2752);
-    			add_location(p2, file$3, 70, 14, 2819);
-    			add_location(div3, file$3, 68, 10, 2732);
-    			attr_dev(div4, "class", "main-ingredients svelte-s5fwi3");
-    			add_location(div4, file$3, 75, 10, 3027);
-    			attr_dev(div5, "class", "cooking-container svelte-s5fwi3");
-    			add_location(div5, file$3, 64, 2, 2585);
-    			attr_dev(div6, "class", "recipe-container svelte-s5fwi3");
-    			add_location(div6, file$3, 59, 2, 2441);
+    			attr_dev(div0, "class", "ingredients-side-panel side-panel svelte-5mm5g3");
+    			toggle_class(div0, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
+    			toggle_class(div0, "side-panel--on-top", /*isSideIngredientsOpen*/ ctx[0]);
+    			add_location(div0, file$2, 74, 2, 2754);
+    			add_location(h2, file$2, 83, 4, 3114);
+    			attr_dev(div1, "class", "timeouts-side-panel side-panel svelte-5mm5g3");
+    			toggle_class(div1, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
+    			toggle_class(div1, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
+    			add_location(div1, file$2, 80, 2, 2971);
+    			attr_dev(p0, "class", "side-content-handler-opener svelte-5mm5g3");
+    			add_location(p0, file$2, 89, 4, 3422);
+    			attr_dev(div2, "class", "side-content-handler ingredients-content-handler svelte-5mm5g3");
+    			toggle_class(div2, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
+    			add_location(div2, file$2, 88, 2, 3262);
+    			attr_dev(p1, "class", "side-content-handler-opener svelte-5mm5g3");
+    			add_location(p1, file$2, 92, 4, 3640);
+    			attr_dev(div3, "class", "side-content-handler timeouts-content-handler svelte-5mm5g3");
+    			toggle_class(div3, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
+    			add_location(div3, file$2, 91, 2, 3488);
+    			attr_dev(div4, "class", "side-ingredients svelte-5mm5g3");
+    			add_location(div4, file$2, 97, 4, 3738);
+    			add_location(p2, file$2, 106, 14, 4014);
+    			add_location(p3, file$2, 107, 14, 4081);
+    			add_location(div5, file$2, 105, 10, 3994);
+    			attr_dev(div6, "class", "main-ingredients svelte-5mm5g3");
+    			add_location(div6, file$2, 112, 10, 4289);
+    			attr_dev(div7, "class", "cooking-container svelte-5mm5g3");
+    			add_location(div7, file$2, 101, 2, 3847);
+    			attr_dev(div8, "class", "recipe-container svelte-5mm5g3");
+    			add_location(div8, file$2, 96, 2, 3703);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
     			mount_component(sveltemarkdown0, div0, null);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, p0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div6, anchor);
-    			append_dev(div6, div2);
-    			mount_component(sveltemarkdown1, div2, null);
-    			append_dev(div6, t3);
-    			append_dev(div6, div5);
-    			mount_component(sveltemarkdown2, div5, null);
-    			append_dev(div5, t4);
-    			mount_component(sveltemarkdown3, div5, null);
-    			append_dev(div5, t5);
-    			append_dev(div5, div3);
+    			append_dev(div1, h2);
+    			append_dev(div1, t2);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div1, null);
+    			}
+
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, p0);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div3, anchor);
     			append_dev(div3, p1);
-    			append_dev(p1, t6);
-    			append_dev(p1, t7);
-    			append_dev(div3, t8);
-    			append_dev(div3, p2);
-    			append_dev(p2, t9);
-    			append_dev(p2, t10);
-    			append_dev(div3, t11);
-    			if (if_block) if_block.m(div3, null);
-    			append_dev(div5, t12);
-    			append_dev(div5, div4);
-    			mount_component(sveltemarkdown4, div4, null);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, div8, anchor);
+    			append_dev(div8, div4);
+    			mount_component(sveltemarkdown1, div4, null);
+    			append_dev(div8, t8);
+    			append_dev(div8, div7);
+    			mount_component(sveltemarkdown2, div7, null);
+    			append_dev(div7, t9);
+    			mount_component(sveltemarkdown3, div7, null);
+    			append_dev(div7, t10);
+    			append_dev(div7, div5);
+    			append_dev(div5, p2);
+    			append_dev(p2, t11);
+    			append_dev(p2, t12);
     			append_dev(div5, t13);
-    			mount_component(sveltemarkdown5, div5, null);
+    			append_dev(div5, p3);
+    			append_dev(p3, t14);
+    			append_dev(p3, t15);
+    			append_dev(div5, t16);
+    			if (if_block) if_block.m(div5, null);
+    			append_dev(div7, t17);
+    			append_dev(div7, div6);
+    			mount_component(sveltemarkdown4, div6, null);
+    			append_dev(div7, t18);
+    			mount_component(sveltemarkdown5, div7, null);
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(div1, "click", /*toggleOpen*/ ctx[2], false, false, false);
+    				dispose = [
+    					listen_dev(div2, "click", /*toggleIngredientsOpen*/ ctx[5], false, false, false),
+    					listen_dev(div3, "click", /*toggleTimersOpen*/ ctx[6], false, false, false)
+    				];
+
     				mounted = true;
     			}
     		},
     		p: function update(ctx, dirty) {
     			const sveltemarkdown0_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown0_changes.source = /*recipe*/ ctx[0].ingredientsContent;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown0_changes.source = /*recipe*/ ctx[2].ingredientsContent;
     			sveltemarkdown0.$set(sveltemarkdown0_changes);
 
-    			if (dirty & /*isSideIngredientsOpen*/ 2) {
-    				toggle_class(div0, "ingredients-side-panel--open", /*isSideIngredientsOpen*/ ctx[1]);
+    			if (dirty & /*isSidePanelOpen*/ 8) {
+    				toggle_class(div0, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
     			}
 
-    			if (dirty & /*isSideIngredientsOpen*/ 2) {
-    				toggle_class(div1, "ingredients-content-handler-opener--open", /*isSideIngredientsOpen*/ ctx[1]);
+    			if (dirty & /*isSideIngredientsOpen*/ 1) {
+    				toggle_class(div0, "side-panel--on-top", /*isSideIngredientsOpen*/ ctx[0]);
+    			}
+
+    			if (dirty & /*countDowns*/ 16) {
+    				each_value = /*countDowns*/ ctx[4];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$1(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block$1(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(div1, null);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+
+    			if (dirty & /*isSidePanelOpen*/ 8) {
+    				toggle_class(div1, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
+    			}
+
+    			if (dirty & /*isSideTimersOpen*/ 2) {
+    				toggle_class(div1, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
+    			}
+
+    			if (dirty & /*isSidePanelOpen*/ 8) {
+    				toggle_class(div2, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
+    			}
+
+    			if (dirty & /*isSidePanelOpen*/ 8) {
+    				toggle_class(div3, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
     			}
 
     			const sveltemarkdown1_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown1_changes.source = /*recipe*/ ctx[0].ingredientsContent;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown1_changes.source = /*recipe*/ ctx[2].ingredientsContent;
     			sveltemarkdown1.$set(sveltemarkdown1_changes);
     			const sveltemarkdown2_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown2_changes.source = /*recipe*/ ctx[0].title;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown2_changes.source = /*recipe*/ ctx[2].title;
     			sveltemarkdown2.$set(sveltemarkdown2_changes);
     			const sveltemarkdown3_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown3_changes.source = /*recipe*/ ctx[0].img;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown3_changes.source = /*recipe*/ ctx[2].img;
     			sveltemarkdown3.$set(sveltemarkdown3_changes);
-    			if ((!current || dirty & /*recipe*/ 1) && t7_value !== (t7_value = /*recipe*/ ctx[0].recipeTime.cookingTime + "")) set_data_dev(t7, t7_value);
-    			if ((!current || dirty & /*recipe*/ 1) && t10_value !== (t10_value = /*recipe*/ ctx[0].recipeTime.totalTime + "")) set_data_dev(t10, t10_value);
+    			if ((!current || dirty & /*recipe*/ 4) && t12_value !== (t12_value = /*recipe*/ ctx[2].recipeTime.cookingTime + "")) set_data_dev(t12, t12_value);
+    			if ((!current || dirty & /*recipe*/ 4) && t15_value !== (t15_value = /*recipe*/ ctx[2].recipeTime.totalTime + "")) set_data_dev(t15, t15_value);
 
-    			if (/*recipe*/ ctx[0].recipeTime.isStartPreviousDay) {
+    			if (/*recipe*/ ctx[2].recipeTime.isStartPreviousDay) {
     				if (if_block) ; else {
     					if_block = create_if_block_1(ctx);
     					if_block.c();
-    					if_block.m(div3, null);
+    					if_block.m(div5, null);
     				}
     			} else if (if_block) {
     				if_block.d(1);
@@ -8722,15 +9147,20 @@ var app = (function () {
     			}
 
     			const sveltemarkdown4_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown4_changes.source = /*recipe*/ ctx[0].ingredientsContent;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown4_changes.source = /*recipe*/ ctx[2].ingredientsContent;
     			sveltemarkdown4.$set(sveltemarkdown4_changes);
     			const sveltemarkdown5_changes = {};
-    			if (dirty & /*recipe*/ 1) sveltemarkdown5_changes.source = /*recipe*/ ctx[0].content;
+    			if (dirty & /*recipe*/ 4) sveltemarkdown5_changes.source = /*recipe*/ ctx[2].content;
     			sveltemarkdown5.$set(sveltemarkdown5_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(sveltemarkdown0.$$.fragment, local);
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
     			transition_in(sveltemarkdown1.$$.fragment, local);
     			transition_in(sveltemarkdown2.$$.fragment, local);
     			transition_in(sveltemarkdown3.$$.fragment, local);
@@ -8740,6 +9170,12 @@ var app = (function () {
     		},
     		o: function outro(local) {
     			transition_out(sveltemarkdown0.$$.fragment, local);
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
     			transition_out(sveltemarkdown1.$$.fragment, local);
     			transition_out(sveltemarkdown2.$$.fragment, local);
     			transition_out(sveltemarkdown3.$$.fragment, local);
@@ -8752,8 +9188,13 @@ var app = (function () {
     			destroy_component(sveltemarkdown0);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div6);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(div8);
     			destroy_component(sveltemarkdown1);
     			destroy_component(sveltemarkdown2);
     			destroy_component(sveltemarkdown3);
@@ -8761,7 +9202,7 @@ var app = (function () {
     			destroy_component(sveltemarkdown4);
     			destroy_component(sveltemarkdown5);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
@@ -8769,14 +9210,61 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(51:0) {#if recipe}",
+    		source: "(74:0) {#if recipe}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:14) {#if recipe.recipeTime.isStartPreviousDay}
+    // (85:4) {#each countDowns as countDown}
+    function create_each_block$1(ctx) {
+    	let countdown;
+    	let current;
+
+    	countdown = new Countdown({
+    			props: {
+    				timeEnd: /*countDown*/ ctx[11].timer,
+    				title: /*countDown*/ ctx[11].title
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(countdown.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(countdown, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(countdown.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(countdown.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(countdown, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$1.name,
+    		type: "each",
+    		source: "(85:4) {#each countDowns as countDown}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (109:14) {#if recipe.recipeTime.isStartPreviousDay}
     function create_if_block_1(ctx) {
     	let p;
 
@@ -8784,7 +9272,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Achtung! Prepare previous day";
-    			add_location(p, file$3, 72, 18, 2943);
+    			add_location(p, file$2, 109, 18, 4205);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -8798,17 +9286,17 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(72:14) {#if recipe.recipeTime.isStartPreviousDay}",
+    		source: "(109:14) {#if recipe.recipeTime.isStartPreviousDay}",
     		ctx
     	});
 
     	return block;
     }
 
-    function create_fragment$5(ctx) {
+    function create_fragment$4(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*recipe*/ ctx[0] && create_if_block$2(ctx);
+    	let if_block = /*recipe*/ ctx[2] && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -8824,11 +9312,11 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (/*recipe*/ ctx[0]) {
+    			if (/*recipe*/ ctx[2]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
 
-    					if (dirty & /*recipe*/ 1) {
+    					if (dirty & /*recipe*/ 4) {
     						transition_in(if_block, 1);
     					}
     				} else {
@@ -8864,7 +9352,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$5.name,
+    		id: create_fragment$4.name,
     		type: "component",
     		source: "",
     		ctx
@@ -8873,7 +9361,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$5($$self, $$props, $$invalidate) {
+    function instance$4($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Recipe", slots, []);
 
@@ -8920,15 +9408,40 @@ var app = (function () {
     	onMount(function () {
     		return __awaiter(this, void 0, void 0, function* () {
     			const res = yield window.fetch(`recipes/${params.recipeId}.json`);
-    			$$invalidate(0, recipe = yield res.json());
+    			$$invalidate(2, recipe = yield res.json());
     			console.log(recipe);
     		});
     	});
 
     	let isSideIngredientsOpen = false;
+    	let isSideTimersOpen = false;
+    	let isSidePanelOpen;
 
-    	function toggleOpen() {
-    		$$invalidate(1, isSideIngredientsOpen = !isSideIngredientsOpen);
+    	const countDowns = [
+    		{
+    			title: "AAA",
+    			timer: dayjs_min().add(10, "seconds")
+    		}
+    	];
+
+    	function toggleIngredientsOpen() {
+    		if (isSidePanelOpen && isSideIngredientsOpen) {
+    			$$invalidate(0, isSideIngredientsOpen = false);
+    			$$invalidate(1, isSideTimersOpen = false);
+    		} else {
+    			$$invalidate(0, isSideIngredientsOpen = true);
+    			$$invalidate(1, isSideTimersOpen = false);
+    		}
+    	}
+
+    	function toggleTimersOpen() {
+    		if (isSidePanelOpen && isSideTimersOpen) {
+    			$$invalidate(1, isSideTimersOpen = false);
+    			$$invalidate(0, isSideIngredientsOpen = false);
+    		} else {
+    			$$invalidate(1, isSideTimersOpen = true);
+    			$$invalidate(0, isSideIngredientsOpen = false);
+    		}
     	}
 
     	afterUpdate(function () {
@@ -8964,7 +9477,7 @@ var app = (function () {
     	});
 
     	$$self.$$set = $$props => {
-    		if ("params" in $$props) $$invalidate(3, params = $$props.params);
+    		if ("params" in $$props) $$invalidate(7, params = $$props.params);
     	};
 
     	$$self.$capture_state = () => ({
@@ -8973,38 +9486,61 @@ var app = (function () {
     		afterUpdate,
     		onMount,
     		copy: copyHtmlToClipboard,
+    		CountDown: Countdown,
+    		dayjs,
     		params,
     		recipe,
     		isSideIngredientsOpen,
-    		toggleOpen,
+    		isSideTimersOpen,
+    		isSidePanelOpen,
+    		countDowns,
+    		toggleIngredientsOpen,
+    		toggleTimersOpen,
     		addCopyButton,
     		copyIngredients
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
-    		if ("params" in $$props) $$invalidate(3, params = $$props.params);
-    		if ("recipe" in $$props) $$invalidate(0, recipe = $$props.recipe);
-    		if ("isSideIngredientsOpen" in $$props) $$invalidate(1, isSideIngredientsOpen = $$props.isSideIngredientsOpen);
+    		if ("params" in $$props) $$invalidate(7, params = $$props.params);
+    		if ("recipe" in $$props) $$invalidate(2, recipe = $$props.recipe);
+    		if ("isSideIngredientsOpen" in $$props) $$invalidate(0, isSideIngredientsOpen = $$props.isSideIngredientsOpen);
+    		if ("isSideTimersOpen" in $$props) $$invalidate(1, isSideTimersOpen = $$props.isSideTimersOpen);
+    		if ("isSidePanelOpen" in $$props) $$invalidate(3, isSidePanelOpen = $$props.isSidePanelOpen);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [recipe, isSideIngredientsOpen, toggleOpen, params];
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*isSideTimersOpen, isSideIngredientsOpen*/ 3) {
+    			$$invalidate(3, isSidePanelOpen = isSideTimersOpen || isSideIngredientsOpen);
+    		}
+    	};
+
+    	return [
+    		isSideIngredientsOpen,
+    		isSideTimersOpen,
+    		recipe,
+    		isSidePanelOpen,
+    		countDowns,
+    		toggleIngredientsOpen,
+    		toggleTimersOpen,
+    		params
+    	];
     }
 
     class Recipe extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { params: 3 });
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { params: 7 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Recipe",
     			options,
-    			id: create_fragment$5.name
+    			id: create_fragment$4.name
     		});
     	}
 
@@ -9436,7 +9972,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$4(ctx) {
+    function create_fragment$3(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
@@ -9509,7 +10045,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$4.name,
+    		id: create_fragment$3.name,
     		type: "component",
     		source: "",
     		ctx
@@ -9678,7 +10214,7 @@ var app = (function () {
     	window.location.hash = href;
     }
 
-    function instance$4($$self, $$props, $$invalidate) {
+    function instance$3($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Router", slots, []);
     	let { routes = {} } = $$props;
@@ -10067,7 +10603,7 @@ var app = (function () {
     	constructor(options) {
     		super(options);
 
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
     			routes: 3,
     			prefix: 4,
     			restoreScrollState: 5
@@ -10077,7 +10613,7 @@ var app = (function () {
     			component: this,
     			tagName: "Router",
     			options,
-    			id: create_fragment$4.name
+    			id: create_fragment$3.name
     		});
     	}
 
@@ -10107,9 +10643,9 @@ var app = (function () {
     }
 
     /* src/RecipeSummaryPreview.svelte generated by Svelte v3.35.0 */
-    const file$2 = "src/RecipeSummaryPreview.svelte";
+    const file$1 = "src/RecipeSummaryPreview.svelte";
 
-    function create_fragment$3(ctx) {
+    function create_fragment$2(ctx) {
     	let a;
     	let div;
     	let sveltemarkdown0;
@@ -10136,9 +10672,9 @@ var app = (function () {
     			t = space();
     			create_component(sveltemarkdown1.$$.fragment);
     			attr_dev(div, "class", "summary");
-    			add_location(div, file$2, 8, 2, 139);
+    			add_location(div, file$1, 8, 2, 139);
     			attr_dev(a, "href", a_href_value = "#/recipe/" + /*recipe*/ ctx[0].id);
-    			add_location(a, file$2, 6, 0, 104);
+    			add_location(a, file$1, 6, 0, 104);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10183,7 +10719,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$3.name,
+    		id: create_fragment$2.name,
     		type: "component",
     		source: "",
     		ctx
@@ -10192,7 +10728,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$3($$self, $$props, $$invalidate) {
+    function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("RecipeSummaryPreview", slots, []);
     	
@@ -10223,13 +10759,13 @@ var app = (function () {
     class RecipeSummaryPreview extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$3, safe_not_equal, { recipe: 0 });
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { recipe: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "RecipeSummaryPreview",
     			options,
-    			id: create_fragment$3.name
+    			id: create_fragment$2.name
     		});
     	}
 
@@ -10242,289 +10778,6 @@ var app = (function () {
     	}
     }
 
-    var dayjs_min = createCommonjsModule(function (module, exports) {
-    !function(t,e){module.exports=e();}(commonjsGlobal,function(){var t="millisecond",e="second",n="minute",r="hour",i="day",s="week",u="month",a="quarter",o="year",f="date",h=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,c=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,d={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},$=function(t,e,n){var r=String(t);return !r||r.length>=e?t:""+Array(e+1-r.length).join(n)+t},l={s:$,z:function(t){var e=-t.utcOffset(),n=Math.abs(e),r=Math.floor(n/60),i=n%60;return (e<=0?"+":"-")+$(r,2,"0")+":"+$(i,2,"0")},m:function t(e,n){if(e.date()<n.date())return -t(n,e);var r=12*(n.year()-e.year())+(n.month()-e.month()),i=e.clone().add(r,u),s=n-i<0,a=e.clone().add(r+(s?-1:1),u);return +(-(r+(n-i)/(s?i-a:a-i))||0)},a:function(t){return t<0?Math.ceil(t)||0:Math.floor(t)},p:function(h){return {M:u,y:o,w:s,d:i,D:f,h:r,m:n,s:e,ms:t,Q:a}[h]||String(h||"").toLowerCase().replace(/s$/,"")},u:function(t){return void 0===t}},y="en",M={};M[y]=d;var m=function(t){return t instanceof S},D=function(t,e,n){var r;if(!t)return y;if("string"==typeof t)M[t]&&(r=t),e&&(M[t]=e,r=t);else {var i=t.name;M[i]=t,r=i;}return !n&&r&&(y=r),r||!n&&y},v=function(t,e){if(m(t))return t.clone();var n="object"==typeof e?e:{};return n.date=t,n.args=arguments,new S(n)},g=l;g.l=D,g.i=m,g.w=function(t,e){return v(t,{locale:e.$L,utc:e.$u,x:e.$x,$offset:e.$offset})};var S=function(){function d(t){this.$L=D(t.locale,null,!0),this.parse(t);}var $=d.prototype;return $.parse=function(t){this.$d=function(t){var e=t.date,n=t.utc;if(null===e)return new Date(NaN);if(g.u(e))return new Date;if(e instanceof Date)return new Date(e);if("string"==typeof e&&!/Z$/i.test(e)){var r=e.match(h);if(r){var i=r[2]-1||0,s=(r[7]||"0").substring(0,3);return n?new Date(Date.UTC(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)):new Date(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)}}return new Date(e)}(t),this.$x=t.x||{},this.init();},$.init=function(){var t=this.$d;this.$y=t.getFullYear(),this.$M=t.getMonth(),this.$D=t.getDate(),this.$W=t.getDay(),this.$H=t.getHours(),this.$m=t.getMinutes(),this.$s=t.getSeconds(),this.$ms=t.getMilliseconds();},$.$utils=function(){return g},$.isValid=function(){return !("Invalid Date"===this.$d.toString())},$.isSame=function(t,e){var n=v(t);return this.startOf(e)<=n&&n<=this.endOf(e)},$.isAfter=function(t,e){return v(t)<this.startOf(e)},$.isBefore=function(t,e){return this.endOf(e)<v(t)},$.$g=function(t,e,n){return g.u(t)?this[e]:this.set(n,t)},$.unix=function(){return Math.floor(this.valueOf()/1e3)},$.valueOf=function(){return this.$d.getTime()},$.startOf=function(t,a){var h=this,c=!!g.u(a)||a,d=g.p(t),$=function(t,e){var n=g.w(h.$u?Date.UTC(h.$y,e,t):new Date(h.$y,e,t),h);return c?n:n.endOf(i)},l=function(t,e){return g.w(h.toDate()[t].apply(h.toDate("s"),(c?[0,0,0,0]:[23,59,59,999]).slice(e)),h)},y=this.$W,M=this.$M,m=this.$D,D="set"+(this.$u?"UTC":"");switch(d){case o:return c?$(1,0):$(31,11);case u:return c?$(1,M):$(0,M+1);case s:var v=this.$locale().weekStart||0,S=(y<v?y+7:y)-v;return $(c?m-S:m+(6-S),M);case i:case f:return l(D+"Hours",0);case r:return l(D+"Minutes",1);case n:return l(D+"Seconds",2);case e:return l(D+"Milliseconds",3);default:return this.clone()}},$.endOf=function(t){return this.startOf(t,!1)},$.$set=function(s,a){var h,c=g.p(s),d="set"+(this.$u?"UTC":""),$=(h={},h[i]=d+"Date",h[f]=d+"Date",h[u]=d+"Month",h[o]=d+"FullYear",h[r]=d+"Hours",h[n]=d+"Minutes",h[e]=d+"Seconds",h[t]=d+"Milliseconds",h)[c],l=c===i?this.$D+(a-this.$W):a;if(c===u||c===o){var y=this.clone().set(f,1);y.$d[$](l),y.init(),this.$d=y.set(f,Math.min(this.$D,y.daysInMonth())).$d;}else $&&this.$d[$](l);return this.init(),this},$.set=function(t,e){return this.clone().$set(t,e)},$.get=function(t){return this[g.p(t)]()},$.add=function(t,a){var f,h=this;t=Number(t);var c=g.p(a),d=function(e){var n=v(h);return g.w(n.date(n.date()+Math.round(e*t)),h)};if(c===u)return this.set(u,this.$M+t);if(c===o)return this.set(o,this.$y+t);if(c===i)return d(1);if(c===s)return d(7);var $=(f={},f[n]=6e4,f[r]=36e5,f[e]=1e3,f)[c]||1,l=this.$d.getTime()+t*$;return g.w(l,this)},$.subtract=function(t,e){return this.add(-1*t,e)},$.format=function(t){var e=this;if(!this.isValid())return "Invalid Date";var n=t||"YYYY-MM-DDTHH:mm:ssZ",r=g.z(this),i=this.$locale(),s=this.$H,u=this.$m,a=this.$M,o=i.weekdays,f=i.months,h=function(t,r,i,s){return t&&(t[r]||t(e,n))||i[r].substr(0,s)},d=function(t){return g.s(s%12||12,t,"0")},$=i.meridiem||function(t,e,n){var r=t<12?"AM":"PM";return n?r.toLowerCase():r},l={YY:String(this.$y).slice(-2),YYYY:this.$y,M:a+1,MM:g.s(a+1,2,"0"),MMM:h(i.monthsShort,a,f,3),MMMM:h(f,a),D:this.$D,DD:g.s(this.$D,2,"0"),d:String(this.$W),dd:h(i.weekdaysMin,this.$W,o,2),ddd:h(i.weekdaysShort,this.$W,o,3),dddd:o[this.$W],H:String(s),HH:g.s(s,2,"0"),h:d(1),hh:d(2),a:$(s,u,!0),A:$(s,u,!1),m:String(u),mm:g.s(u,2,"0"),s:String(this.$s),ss:g.s(this.$s,2,"0"),SSS:g.s(this.$ms,3,"0"),Z:r};return n.replace(c,function(t,e){return e||l[t]||r.replace(":","")})},$.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},$.diff=function(t,f,h){var c,d=g.p(f),$=v(t),l=6e4*($.utcOffset()-this.utcOffset()),y=this-$,M=g.m(this,$);return M=(c={},c[o]=M/12,c[u]=M,c[a]=M/3,c[s]=(y-l)/6048e5,c[i]=(y-l)/864e5,c[r]=y/36e5,c[n]=y/6e4,c[e]=y/1e3,c)[d]||y,h?M:g.a(M)},$.daysInMonth=function(){return this.endOf(u).$D},$.$locale=function(){return M[this.$L]},$.locale=function(t,e){if(!t)return this.$L;var n=this.clone(),r=D(t,e,!0);return r&&(n.$L=r),n},$.clone=function(){return g.w(this.$d,this)},$.toDate=function(){return new Date(this.valueOf())},$.toJSON=function(){return this.isValid()?this.toISOString():null},$.toISOString=function(){return this.$d.toISOString()},$.toString=function(){return this.$d.toUTCString()},d}(),p=S.prototype;return v.prototype=p,[["$ms",t],["$s",e],["$m",n],["$H",r],["$W",i],["$M",u],["$y",o],["$D",f]].forEach(function(t){p[t[1]]=function(e){return this.$g(e,t[0],t[1])};}),v.extend=function(t,e){return t.$i||(t(e,S,v),t.$i=!0),v},v.locale=D,v.isDayjs=m,v.unix=function(t){return v(1e3*t)},v.en=M[y],v.Ls=M,v.p={},v});
-    });
-
-    var dayjs = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), dayjs_min, {
-        'default': dayjs_min
-    }));
-
-    /* src/Countdown.svelte generated by Svelte v3.35.0 */
-    const file$1 = "src/Countdown.svelte";
-
-    function create_fragment$2(ctx) {
-    	let div;
-    	let span0;
-    	let t0;
-    	let t1;
-    	let span1;
-    	let t2;
-    	let t3;
-    	let button0;
-    	let t5;
-    	let button1;
-    	let t7;
-    	let button2;
-    	let t9;
-    	let button3;
-    	let t11;
-    	let audio;
-    	let audio_src_value;
-    	let mounted;
-    	let dispose;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			span0 = element("span");
-    			t0 = text(/*minutes*/ ctx[1]);
-    			t1 = space();
-    			span1 = element("span");
-    			t2 = text(/*seconds*/ ctx[2]);
-    			t3 = space();
-    			button0 = element("button");
-    			button0.textContent = "+10 m";
-    			t5 = space();
-    			button1 = element("button");
-    			button1.textContent = "+1 m";
-    			t7 = space();
-    			button2 = element("button");
-    			button2.textContent = "+10 s";
-    			t9 = space();
-    			button3 = element("button");
-    			button3.textContent = "X";
-    			t11 = space();
-    			audio = element("audio");
-    			attr_dev(span0, "class", "minutes");
-    			add_location(span0, file$1, 55, 2, 1189);
-    			attr_dev(span1, "class", "seconds");
-    			add_location(span1, file$1, 56, 2, 1230);
-    			add_location(button0, file$1, 57, 2, 1271);
-    			add_location(button1, file$1, 58, 2, 1341);
-    			add_location(button2, file$1, 59, 2, 1409);
-    			add_location(button3, file$1, 60, 2, 1479);
-    			audio.loop = "true";
-    			if (audio.src !== (audio_src_value = "sound/default.mp3")) attr_dev(audio, "src", audio_src_value);
-    			add_location(audio, file$1, 61, 2, 1521);
-    			attr_dev(div, "class", "countdown");
-    			add_location(div, file$1, 54, 0, 1163);
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, span0);
-    			append_dev(span0, t0);
-    			append_dev(div, t1);
-    			append_dev(div, span1);
-    			append_dev(span1, t2);
-    			append_dev(div, t3);
-    			append_dev(div, button0);
-    			append_dev(div, t5);
-    			append_dev(div, button1);
-    			append_dev(div, t7);
-    			append_dev(div, button2);
-    			append_dev(div, t9);
-    			append_dev(div, button3);
-    			append_dev(div, t11);
-    			append_dev(div, audio);
-    			/*audio_binding*/ ctx[10](audio);
-
-    			if (!mounted) {
-    				dispose = [
-    					listen_dev(button0, "click", /*click_handler*/ ctx[7], false, false, false),
-    					listen_dev(button1, "click", /*click_handler_1*/ ctx[8], false, false, false),
-    					listen_dev(button2, "click", /*click_handler_2*/ ctx[9], false, false, false),
-    					listen_dev(button3, "click", /*stopAlarm*/ ctx[3], false, false, false)
-    				];
-
-    				mounted = true;
-    			}
-    		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*minutes*/ 2) set_data_dev(t0, /*minutes*/ ctx[1]);
-    			if (dirty & /*seconds*/ 4) set_data_dev(t2, /*seconds*/ ctx[2]);
-    		},
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			/*audio_binding*/ ctx[10](null);
-    			mounted = false;
-    			run_all(dispose);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_fragment$2.name,
-    		type: "component",
-    		source: "",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function instance$2($$self, $$props, $$invalidate) {
-    	let minutes;
-    	let seconds;
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots("Countdown", slots, []);
-    	let { timeEnd = null } = $$props;
-    	let timeDiff = getDiff();
-    	let player = null;
-    	let timer = null;
-    	let stopped = false;
-
-    	onMount(function () {
-    		timer = setInterval(function () {
-    			$$invalidate(6, timeDiff = getDiff());
-    		});
-    	});
-
-    	onDestroy(() => {
-    		if (timer) {
-    			clearInterval(timer);
-    		}
-    	});
-
-    	function stopAlarm() {
-    		stopped = true;
-    		if (player) player.pause();
-    	} // TODO emit element to remove clockdown
-
-    	function increaseAlarm(time, amount) {
-    		if (player) {
-    			player.pause();
-    		}
-
-    		const now = dayjs_min();
-
-    		if (timeEnd.diff(now) < 0) {
-    			$$invalidate(5, timeEnd = now);
-    		}
-
-    		$$invalidate(5, timeEnd = timeEnd.add(time, amount));
-    	}
-
-    	function getDiff() {
-    		const now = dayjs_min();
-
-    		if (timeEnd.diff(now) < 0) {
-    			if (!stopped) {
-    				player.play();
-    			}
-
-    			return { minutes: 0, seconds: 0 };
-    		}
-
-    		return {
-    			minutes: timeEnd.diff(now, "minutes"),
-    			seconds: timeEnd.diff(now, "seconds") % 60
-    		};
-    	}
-
-    	const writable_props = ["timeEnd"];
-
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Countdown> was created with unknown prop '${key}'`);
-    	});
-
-    	const click_handler = () => increaseAlarm(10, "minute");
-    	const click_handler_1 = () => increaseAlarm(1, "minute");
-    	const click_handler_2 = () => increaseAlarm(10, "second");
-
-    	function audio_binding($$value) {
-    		binding_callbacks[$$value ? "unshift" : "push"](() => {
-    			player = $$value;
-    			$$invalidate(0, player);
-    		});
-    	}
-
-    	$$self.$$set = $$props => {
-    		if ("timeEnd" in $$props) $$invalidate(5, timeEnd = $$props.timeEnd);
-    	};
-
-    	$$self.$capture_state = () => ({
-    		dayjs,
-    		onDestroy,
-    		onMount,
-    		timeEnd,
-    		timeDiff,
-    		player,
-    		timer,
-    		stopped,
-    		stopAlarm,
-    		increaseAlarm,
-    		getDiff,
-    		minutes,
-    		seconds
-    	});
-
-    	$$self.$inject_state = $$props => {
-    		if ("timeEnd" in $$props) $$invalidate(5, timeEnd = $$props.timeEnd);
-    		if ("timeDiff" in $$props) $$invalidate(6, timeDiff = $$props.timeDiff);
-    		if ("player" in $$props) $$invalidate(0, player = $$props.player);
-    		if ("timer" in $$props) timer = $$props.timer;
-    		if ("stopped" in $$props) stopped = $$props.stopped;
-    		if ("minutes" in $$props) $$invalidate(1, minutes = $$props.minutes);
-    		if ("seconds" in $$props) $$invalidate(2, seconds = $$props.seconds);
-    	};
-
-    	if ($$props && "$$inject" in $$props) {
-    		$$self.$inject_state($$props.$$inject);
-    	}
-
-    	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*timeDiff*/ 64) {
-    			$$invalidate(1, minutes = timeDiff.minutes);
-    		}
-
-    		if ($$self.$$.dirty & /*timeDiff*/ 64) {
-    			$$invalidate(2, seconds = timeDiff.seconds);
-    		}
-    	};
-
-    	return [
-    		player,
-    		minutes,
-    		seconds,
-    		stopAlarm,
-    		increaseAlarm,
-    		timeEnd,
-    		timeDiff,
-    		click_handler,
-    		click_handler_1,
-    		click_handler_2,
-    		audio_binding
-    	];
-    }
-
-    class Countdown extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { timeEnd: 5 });
-
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "Countdown",
-    			options,
-    			id: create_fragment$2.name
-    		});
-    	}
-
-    	get timeEnd() {
-    		throw new Error("<Countdown>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	set timeEnd(value) {
-    		throw new Error("<Countdown>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-    }
-
     /* src/RecipeList.svelte generated by Svelte v3.35.0 */
 
     const { console: console_1 } = globals;
@@ -10532,17 +10785,17 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[6] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
-    // (36:0) {#each recipes as recipe}
+    // (32:0) {#each recipes as recipe}
     function create_each_block(ctx) {
     	let recipesummarypreview;
     	let current;
 
     	recipesummarypreview = new RecipeSummaryPreview({
-    			props: { recipe: /*recipe*/ ctx[6] },
+    			props: { recipe: /*recipe*/ ctx[5] },
     			$$inline: true
     		});
 
@@ -10556,7 +10809,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const recipesummarypreview_changes = {};
-    			if (dirty & /*recipes*/ 1) recipesummarypreview_changes.recipe = /*recipe*/ ctx[6];
+    			if (dirty & /*recipes*/ 1) recipesummarypreview_changes.recipe = /*recipe*/ ctx[5];
     			recipesummarypreview.$set(recipesummarypreview_changes);
     		},
     		i: function intro(local) {
@@ -10577,14 +10830,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(36:0) {#each recipes as recipe}",
+    		source: "(32:0) {#each recipes as recipe}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:0) {#if loaded && recipes.length === 0}
+    // (36:0) {#if loaded && recipes.length === 0}
     function create_if_block(ctx) {
     	let p;
 
@@ -10592,7 +10845,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "No more recipes";
-    			add_location(p, file, 40, 2, 1588);
+    			add_location(p, file, 36, 2, 1424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -10606,7 +10859,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(40:0) {#if loaded && recipes.length === 0}",
+    		source: "(36:0) {#if loaded && recipes.length === 0}",
     		ctx
     	});
 
@@ -10614,17 +10867,9 @@ var app = (function () {
     }
 
     function create_fragment$1(ctx) {
-    	let countdown;
-    	let t0;
-    	let t1;
+    	let t;
     	let if_block_anchor;
     	let current;
-
-    	countdown = new Countdown({
-    			props: { timeEnd: /*timer*/ ctx[2] },
-    			$$inline: true
-    		});
-
     	let each_value = /*recipes*/ ctx[0];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -10641,14 +10886,11 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			create_component(countdown.$$.fragment);
-    			t0 = space();
-
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t1 = space();
+    			t = space();
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     		},
@@ -10656,14 +10898,11 @@ var app = (function () {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			mount_component(countdown, target, anchor);
-    			insert_dev(target, t0, anchor);
-
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(target, anchor);
     			}
 
-    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t, anchor);
     			if (if_block) if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     			current = true;
@@ -10684,7 +10923,7 @@ var app = (function () {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(t1.parentNode, t1);
+    						each_blocks[i].m(t.parentNode, t);
     					}
     				}
 
@@ -10710,7 +10949,6 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(countdown.$$.fragment, local);
 
     			for (let i = 0; i < each_value.length; i += 1) {
     				transition_in(each_blocks[i]);
@@ -10719,7 +10957,6 @@ var app = (function () {
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(countdown.$$.fragment, local);
     			each_blocks = each_blocks.filter(Boolean);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -10729,10 +10966,8 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			destroy_component(countdown, detaching);
-    			if (detaching) detach_dev(t0);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t);
     			if (if_block) if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     		}
@@ -10797,7 +11032,6 @@ var app = (function () {
     	const page = Math.max(parseInt(params.page) - 1, 0);
     	let loaded = false;
     	console.log(page);
-    	let timer = dayjs_min().add(3, "second");
 
     	onMount(function () {
     		return __awaiter(this, void 0, void 0, function* () {
@@ -10816,42 +11050,38 @@ var app = (function () {
     	});
 
     	$$self.$$set = $$props => {
-    		if ("params" in $$props) $$invalidate(3, params = $$props.params);
+    		if ("params" in $$props) $$invalidate(2, params = $$props.params);
     	};
 
     	$$self.$capture_state = () => ({
     		__awaiter,
     		onMount,
     		RecipeSummaryPreview,
-    		CountDown: Countdown,
-    		dayjs,
     		recipes,
     		params,
     		page,
     		loaded,
-    		pageSize,
-    		timer
+    		pageSize
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
     		if ("recipes" in $$props) $$invalidate(0, recipes = $$props.recipes);
-    		if ("params" in $$props) $$invalidate(3, params = $$props.params);
+    		if ("params" in $$props) $$invalidate(2, params = $$props.params);
     		if ("loaded" in $$props) $$invalidate(1, loaded = $$props.loaded);
-    		if ("timer" in $$props) $$invalidate(2, timer = $$props.timer);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [recipes, loaded, timer, params];
+    	return [recipes, loaded, params];
     }
 
     class RecipeList extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { params: 3 });
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { params: 2 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
