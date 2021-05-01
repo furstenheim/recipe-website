@@ -10133,8 +10133,8 @@ var app = (function () {
     			t = space();
     			create_component(sveltemarkdown1.$$.fragment);
     			attr_dev(div, "class", "summary");
-    			add_location(div, file$1, 8, 2, 140);
-    			attr_dev(a, "href", a_href_value = "/#/recipe/" + /*recipe*/ ctx[0].id);
+    			add_location(div, file$1, 8, 2, 139);
+    			attr_dev(a, "href", a_href_value = "#/recipe/" + /*recipe*/ ctx[0].id);
     			add_location(a, file$1, 6, 0, 104);
     		},
     		l: function claim(nodes) {
@@ -10156,7 +10156,7 @@ var app = (function () {
     			if (dirty & /*recipe*/ 1) sveltemarkdown1_changes.source = /*recipe*/ ctx[0].img;
     			sveltemarkdown1.$set(sveltemarkdown1_changes);
 
-    			if (!current || dirty & /*recipe*/ 1 && a_href_value !== (a_href_value = "/#/recipe/" + /*recipe*/ ctx[0].id)) {
+    			if (!current || dirty & /*recipe*/ 1 && a_href_value !== (a_href_value = "#/recipe/" + /*recipe*/ ctx[0].id)) {
     				attr_dev(a, "href", a_href_value);
     			}
     		},

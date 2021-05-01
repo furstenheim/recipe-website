@@ -7,7 +7,7 @@ export let recipe: RecipeSummary = null
 </script>
 
 
-<a href="/#/recipe/{recipe.id}">
+<a href="#/recipe/{recipe.id}">
 
   <div class="summary" >
     <SvelteMarkdown source="{recipe.title}" />
