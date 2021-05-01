@@ -2,7 +2,8 @@
 import { onMount } from 'svelte'
 import RecipeSummaryPreview from './RecipeSummaryPreview.svelte'
 import type { RecipeSummary } from './recipe'
-
+import CountDown from './Countdown.svelte'
+import * as dayjs from 'dayjs'
 let recipes:RecipeSummary[] = []
 export let params = {
   page: '0'
@@ -13,7 +14,7 @@ let loaded: boolean = false
 
 console.log(page)
 const pageSize = 100
-
+let timer = dayjs.default().add(3, 'second')
 onMount(async function () {
   const res = await window.fetch('recipes.json')
   console.log(res)
@@ -24,6 +25,7 @@ onMount(async function () {
 })
 </script>
 
+<CountDown timeEnd="{timer}"></CountDown>
 {#each recipes as recipe}
   <RecipeSummaryPreview recipe="{recipe}"/>
 {/each}
