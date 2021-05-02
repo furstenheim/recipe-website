@@ -83,7 +83,7 @@ fuerte, baña con el whisky y deja se evapore.
 
 
 A continuación añade el agua y lleva a ebullición, en ese momento baja el
-fuego y deja cocer unos 15-20 minutos. Pasa el caldo por el colador chino
+fuego y deja cocer unos 15-20 minutos[](timer:20:minutes). Pasa el caldo por el colador chino
 <https://gastronomiaycia.republica.com/2009/08/06/colador-chino/> presionando
 bien las cabezas de los langostinos para que suelten todo su jugo.
 Incorpora al caldo de langostinos la cebolla (y compañía) pochada, añade la

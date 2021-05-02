@@ -85,7 +85,7 @@ caliente hasta cubrir.
 
 Lleva a ebullición y a continuación baja el fuego, cuece con la olla
 semi-tapada hasta que las patatas estén tiernas y la carne hecha al gusto,
-pueden ser necesarios unos 30 minutos. De vez en cuando mueve con una
+pueden ser necesarios unos 30 minutos[](timer:30:minutes). De vez en cuando mueve con una
 cuchara de madera para que el almidón vaya saliendo y espesando la salsa.
 
 Emplatado

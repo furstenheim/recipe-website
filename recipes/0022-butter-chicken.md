@@ -122,17 +122,17 @@ and ginger paste for a minimum of 1 hour.
 4. In a large pan on medium heat, add oil and butter until the butter is
 melted.
 5. Add the onions, garam masala, fenugreek powder, cloves and cinnamon
-stick. Saute for 5 minutes until onions are caramelized.
-6. Add garlic and ginger and fry for another 2 minutes.
+stick. Saute for 5 minutes[](timer:5:minutes) until onions are caramelized.
+6. Add garlic and ginger and fry for another 2 minutes[](timer:2:minutes).
 7. Add the marinaded chicken. Stir and fry until it is no longer pink on
 the outside.
 8. Add pureed tomatoes, kashmiri red chilli powder, sugar, and salt and
 pepper.
 9. Increase the heat to medium-high to boil. Once it boils, reduce to low
-heat and allow to simmer for 15 minutes with the lid on. Stirring
+heat and allow to simmer for 15 minutes[](timer:15:minutes) with the lid on. Stirring
 occasionally.
 10. Remove and discard cinnamon stick and cloves. Turn off the heat and
-cool for 10 minutes.
+cool for 10 minutes[](timer:10:minutes).
 11. Pour in heavy cream and the honey. Stir to combine.
 12. Plate the butter chicken and garnish with coriander leaves. I drizzled
 the extra heavy cream on top.

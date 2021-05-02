@@ -43,7 +43,7 @@ great choice for family meals or even the occassional dinner party.
 
 How to Make It
 
-   1. Soak the dried mushrooms in a bowl of warm water for 20 minutes, or
+   1. Soak the dried mushrooms in a bowl of warm water for 20 minutes[](timer:20:minutes), or
    until they have softened. Squeeze out the excess water, cut the stems off
    the mushrooms, and thinly slice. Reserve 1 tablespoon of the mushroom
    soaking liquid.

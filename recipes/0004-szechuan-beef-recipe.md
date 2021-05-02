@@ -66,13 +66,13 @@ Steps to Make It
    8. Add 1 1/2 tablespoons oil to the heated wok
    <https://www.thespruceeats.com/telling-a-wok-is-hot-enough-694410> by
    drizzling it down the sides. When the oil is hot, add the julienned
-   carrots. Stir-fry for 2 minutes, stirring in the salt. (Do not brown the
+   carrots. Stir-fry for 2 minutes[](timer:2:minutes), stirring in the salt. (Do not brown the
    carrots.) Remove from the wok.
    9. Heat remaining 6 tablespoons of oil in the wok over medium-high to high
    heat. When the oil is hot, add the beef.
    10. Stir-fry <https://www.thespruceeats.com/tips-for-perfect-stir-fry-995435>
 for
-   approximately 10 minutes, until the beef is crispy and dark brown and chewy
+   approximately 10 minutes[](timer:10:minutes), until the beef is crispy and dark brown and chewy
    (you will hear the beef sizzle as it dries out).
    11. Splash the beef with the rice wine or dry sherry during the later stages
    of cooking.

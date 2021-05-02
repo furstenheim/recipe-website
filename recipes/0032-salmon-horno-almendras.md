@@ -83,7 +83,7 @@ crujiente después del horneado. Presiona ligeramente para que se adhiera
 bien.
 
 Cuando el horno esté a la temperatura indicada, introduce la bandeja con el
-pescado a altura media y hornea durante 15 minutos aproximadamente, todo
+pescado a altura media y hornea durante 15 minutos[](timer:15:minutes) aproximadamente, todo
 dependerá de lo gruesos que sean los lomos y del gusto del comensal, si te
 gusta el salmón poco hecho o muy hecho. Será fácil comprobar el punto de
 cocción.

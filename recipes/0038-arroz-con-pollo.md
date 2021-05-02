@@ -100,7 +100,7 @@ nos gusta más separarlo y volverlo a introducir en la olla en los últimos
 cinco minutos de reposo del arroz.
 
 Añade entonces el caldo y lleva a ebullición, baja el fuego y deja cocer
-tapando el recipiente hasta que el arroz esté en su punto, unos 15 minutos.
+tapando el recipiente hasta que el arroz esté en su punto, unos 15 minutos[](timer:15:minutes).
 Entonces, incorpora el pollo al arroz, tapa la olla y apaga el fuego. Deja
 reposar cinco minutos antes de servir, si quedaba algo de caldo se
 absorberá.

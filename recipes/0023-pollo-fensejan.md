@@ -86,7 +86,7 @@ incorpora la melaza de granada y la miel.
 
 
 Cuando rompa a hervir, reduce el fuego, cuece con la cazuela tapada (sin
-encajar) unos 25-30 minutos, ve dándole la vuelta al pollo de vez en
+encajar) unos 25-30 minutos[](timer:30:minutes), ve dándole la vuelta al pollo de vez en
 cuando, y comprobando que no se quede seco (se podría añadir un poco más de
 caldo en caso necesario).
 Emplatado

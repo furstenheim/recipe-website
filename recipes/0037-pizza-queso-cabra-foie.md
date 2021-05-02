@@ -69,7 +69,7 @@ continuación reparte por toda la masa el queso de cabra desmigado, el foie
 gras mi-cuit y la mozzarella rallada.
 
 Introduce la pizza en el horno a altura media, y cuando esté el borde
-dorado, unos 15 minutos (el tiempo puede variar según el horno) retírala y
+dorado, unos 15 minutos[](timer:15:minutes) (el tiempo puede variar según el horno) retírala y
 añade la rúcula, un hilo de miel, pimienta negra recién molida y una pizca
 orégano seco.
 Emplatado

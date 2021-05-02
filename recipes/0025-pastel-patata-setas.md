@@ -62,7 +62,7 @@ alguna variante, que la compartáis con nosotros.
 ### Elaboración
 
 Cortar la cebolla en juliana y pocharla a fuego lento, con una pizca de
-sal, y tapada durante unos 45 minutos. Mientras tanto, cortar la base del
+sal, y tapada durante unos 45 minutos[](timer:45:minutes). Mientras tanto, cortar la base del
 pie de los boletus edulis, limpiarlos con un trapo húmedo y filetearlos.
 
 En una sartén con un poco de aceite de oliva virgen extra, saltear las
@@ -80,7 +80,7 @@ rallado, y repetir de nuevo con una capa de cada.
 Condimentar con las hierbas aromáticas, pimienta y sal entre las capas.
 Verter la [leche evaporada](https://gastronomiaycia.republica.com/2008/05/15/leche-evaporada/) e
 introducir la bandeja en el horno precalentado a 180º C. Hornear entre 60 y
-90 minutos. Finalizado el tiempo, dejar reposar un rato.
+90 minutos[](timer:90:minutes). Finalizado el tiempo, dejar reposar un rato.
 Acabado y presentación
 
 Cortar el *pastel de patatas y setas* en porciones y servir en los platos.

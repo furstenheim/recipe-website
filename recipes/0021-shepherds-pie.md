@@ -71,7 +71,7 @@ mashed potatoes.
 Dash of Paprika
 1. Preheat
 the oven to 350 degrees
-2. Boil potatoes in salted water for about 15 minutes or until fork tender.
+2. Boil potatoes in salted water for about 15 minutes[](timer:15:minutes) or until fork tender.
 3. Strain
 and mash the potatoes with a potato masher, food mill, hand mixer or a
 metal whisk.
@@ -98,4 +98,4 @@ top with the mashed potato mixture.
 13. Sprinkle with paprika.
 
 14. Optional Garnish with Sage
-14. Bake in the preheated oven for 30 minutes, or until golden brown.
+14. Bake in the preheated oven for 30 minutes[](timer:30:minutes), or until golden brown.

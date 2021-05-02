@@ -31,7 +31,7 @@ CookingTime:
 
 
 1.
-      Wash the rice (1 cup = 3 rolls) with running water for 1-2 minutes
+      Wash the rice (1 cup = 3 rolls) with running water for 1-2 minutes[](timer:2:minutes)
       until there is no more starch coming out of it. After you are
 done washing,
       take the rice and place it gently in a pot, add a little bit more water

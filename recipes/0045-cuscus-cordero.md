@@ -81,7 +81,7 @@ hierbabuena y el *Tandoori Masala*, vuelve a mezclar y vierte el agua o el
 caldo.
 
 Sube el fuego y cuando rompa a hervir apágalo, retira el recipiente del
-fogón y tápalo, déjalo entre 5 y 10 minutos para que se hidrate, mientras
+fogón y tápalo, déjalo entre 5 y 10 minutos[](timer:10:minutes) para que se hidrate, mientras
 tanto pica el cilantro e
 incorpóralo al cuscús, mézclalo bien con una cuchara de acero inoxidable,
 ayuda a que el grano quede suelto.

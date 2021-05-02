@@ -53,15 +53,15 @@ bien los ajos laminados, y las cebollas frescas picadas. Añadimos también
 los pimientos picados y los espárragos verdes también troceados.
 Salpimentamos y pochamos bien. Cuando la verdura esté ya medio hecho,
 añadimos todas las setas picadas a la cazuela y seguimos pochando bien
-todo. Dejamos así unos 20-25 minutos. Agregaremos entonces el vino blanco
+todo. Dejamos así unos 20-25 minutos[](timer:25:minutes). Agregaremos entonces el vino blanco
 (dejar un minuto que evapore el alcohol), la salsa de soja, los tomates
 picados (no triturado) y un vaso de agua, ajustamos de sal. Esperamos que
 rompa a hervir y bajamos el fuego, tapamos la cazuela y dejamos freír el
-tomate bien durante unos 30 minutos. Mientras esto se va haciendo, secamos
+tomate bien durante unos 30 minutos[](timer:30:minutes). Mientras esto se va haciendo, secamos
 las berenjenas y las pasamos por la plancha hasta dorar. Reservar. Por otro
 lado cortamos las patatas a rodajas finas y las horneamos (o pasamos
 por el microondas
-8 minutos con papel secante) hasta conseguir que estén hechas y
+8 minutos[](timer:8:minutes) con papel secante) hasta conseguir que estén hechas y
 doradas. Reservamos
 también. Precalentamos el horno a 250º con grill. Pasamos a hacer la bechamel,
 para ello echamos en un cazo 2 cucharadas de aceite de oliva y cuando
@@ -74,7 +74,7 @@ añadimos nuez moscada, un poco mas de soja y reservamos. Para montar la
 musaka colocaremos en la fuente de horno una capa de patatas, otra de
 sofrito de verduras, encima una capa de berenjenas asadas y otra capa de
 sofrito, mas otra de berenjenas, así hasta completar capas. Por último
-coronamos la fuente con la bechamel y metemos al horno 5-10 minutos hasta
+coronamos la fuente con la bechamel y metemos al horno 5-10 minutos[](timer:10:minutes) hasta
 que la superficie este dorada. Dejamos reposar unos minutos fuera del horno
 y servir.
 

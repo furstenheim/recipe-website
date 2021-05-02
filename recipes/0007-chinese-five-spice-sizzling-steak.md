@@ -78,7 +78,7 @@ you can definitely venture out and use other greens like bok choy,
 broccoli, snap peas, green beans. Just to mention a few!
 HOW TO MAKE THE STEAK TENDER?
 
-Freeze the steak briefly for about 15 minutes. This will help you to slice
+Freeze the steak briefly for about 15 minutes[](timer:15:minutes). This will help you to slice
 thinly. It is also important to slice the steak across the grain. My mom
 also swears that marinating meat, like beef with cornstarch, also helps to
 tenderize the meat.
@@ -86,8 +86,8 @@ tenderize the meat.
 ### TIPS
 
 1. THINLY SLICE THE STEAK AND MARINATE
-Place the steak in the freezer for about 15 minutes and then thinly slice
-across the grain and then marinade for 30 minutes at room temperature while
+Place the steak in the freezer for about 15 minutes[](timer:15:minutes) and then thinly slice
+across the grain and then marinade for 30 minutes[](timer:30:minutes) at room temperature while
 you are preparing other things.
 2. PREPARE THE VEGGIES
 Cut the onions and bell peppers into large wedges. If you use baby
@@ -133,18 +133,18 @@ immediately.
 ### INSTRUCTIONS:
 #### MARINADE THE STEAK:
 
-   1.   Place the steak in the freezer for about 15 minutes and then thinly
+   1.   Place the steak in the freezer for about 15 minutes[](timer:15:minutes) and then thinly
    slice across the grain
    2.   While the steak is in the freezer, place all the marinade ingredients
    and aromatics into a large bowl. Whisk to mix. Add the thinly sliced beef
-   and marinade for 30 minutes at room temperature
+   and marinade for 30 minutes[](timer:30:minutes) at room temperature
 
 #### PREPARE OTHER THINGS:
 
    1.   Veggies: While waiting for the steak to marinate, peel and cut the onion
    into large wedges. Seeded the bell peppers and cut into about 1-inch square
    2.   Bring a medium pot of water to a boil. Add baby broccoli and blanch for
-   about 2 minutes and then quickly submerge in cold water to stop the cooking
+   about 2 minutes[](timer:2:minutes) and then quickly submerge in cold water to stop the cooking
    process. Remove and drain water off
    3.   Place baby broccoli on a plate. You can either leave it as is or drizzle
    with 1 Tbsp Carapelli Extra Virgin Olive Oil and freshly ground sea salt to
@@ -157,10 +157,10 @@ immediately.
    1.   Preheat a wok or large skillet over medium to high heat. When it's hot,
    add 1 Tbsp of Carapelli Extra Virgin Olive Oil. Add the steak and let it
    cook undisturbed for about 30 seconds and then stir to turn the beef and
-   cook again for another 1 to 1 1/2 minutes or until no longer pink. Remove
+   cook again for another 1 to 1 1/2 minutes[](timer:2:minutes) or until no longer pink. Remove
    from the wok/skillet to a plate
    2.   In the same wok/skillet. Add another 1 Tbsp of Carapelli Extra Virgin
-   Olive Oil. Add bell peppers and onion. Stir fry for about 2 minutes or
+   Olive Oil. Add bell peppers and onion. Stir fry for about 2 minutes[](timer:2:minutes) or
    until the veggies are soft but still slightly crunchy
    3.   Deglaze with Shaoxing wine or dry sherry. Scrape the bottom of the
    wok/skillet to remove any little bits that stuck at the bottom when you

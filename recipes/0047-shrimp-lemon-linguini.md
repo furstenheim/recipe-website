@@ -41,10 +41,10 @@ CookingTime:
 
 
 Bring a large pot of lightly salted water to a boil. Add linguine, and cook
-for 9 to 13 minutes or until al dente; drain.Heat oil in a large saucepan
+for 9 to 13 minutes[](timer:13:minutes) or until al dente; drain.Heat oil in a large saucepan
 over medium heat, and saute garlic about 1 minute. Mix in chicken broth,
 wine, lemon juice, lemon zest, salt, and pepper. Reduce heat, and simmer
 until liquid is reduced by about 1/2.Mix shrimp, butter, parsley, and basil
-into the saucepan. Cook 2 to 3 minutes, until shrimp is opaque. Stir in the
-cooked linguine, and continue cooking 2 minutes, until well coated.All
+into the saucepan. Cook 2 to 3 minutes[](timer:3:minutes), until shrimp is opaque. Stir in the
+cooked linguine, and continue cooking 2 minutes[](timer:2:minutes), until well coated.All
 done! Now take a photo, rate it, and share your accomplishments!

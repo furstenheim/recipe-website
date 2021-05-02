@@ -82,9 +82,9 @@ a medio-bajo y añade el puerro, el pimiento y una pizca de sal, mezcla bien
 para que se cuelen bajo las alitas, tapa y deja cocinar unos cinco minutos.
 
 Añade el caldo de pollo, la salsa de soja, el tomillo y el romero, dale la
-vuelta a las alitas y vuelve a tapar para cocinar unos 6-8 minutos.
+vuelta a las alitas y vuelve a tapar para cocinar unos 6-8 minutos[](timer:8:minutes).
 Entonces añade los tomates cherry enteros, vuelve a tapar y a dejar cocinar
-otros 5 minutos. Será fácil apreciar cuando el pollo esté hecho porque los
+otros 5 minutos[](timer:5:minutes). Será fácil apreciar cuando el pollo esté hecho porque los
 pequeños muslitos de las alitas se empiezan a separar del hueso.
 
 En ese momento destapa la sartén, sube el fuego para que reduzca el jugo de

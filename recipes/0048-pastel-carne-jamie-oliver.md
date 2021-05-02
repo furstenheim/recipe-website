@@ -95,7 +95,7 @@ horas. Si tu sartén u olla no es apta para el horno o lo dudas, pasa el
 guiso a un molde de horno y tápalo casi completamente con papel albal.
 
 12. Tras dos horas, sacamos el guiso del horno y comprobamos que la
-consistencia es espesa, si no, lo metemos unos 10 minutos más, esta vez sin
+consistencia es espesa, si no, lo metemos unos 10 minutos[](timer:10:minutes) más, esta vez sin
 tapa -no queremos caldo líquido en nuestro pastel-. Batimos el huevo y lo
 reservamos, lo utilizaremos  después para pintar el hojaldre.
 
@@ -126,10 +126,10 @@ masa de la tapa para cerrar bien el pastel. No nos vamos a preocupar de que
 quede bonito, el horno lo va a transformar en un pastel rustico precioso,
 de verdad!!
 
-18. Ahora vamos con el pastel al horno, a 180ºC durante 40 minutos o
+18. Ahora vamos con el pastel al horno, a 180ºC durante 40 minutos[](timer:40:minutes) o
 hasta que esté dorado y bien hecho el hojaldre.
 
-19. Ya solo queda sacarlo y dejarlo reposar unos 10 minutos. Podemos
+19. Ya solo queda sacarlo y dejarlo reposar unos 10 minutos[](timer:10:minutes). Podemos
 aprovechar para preparar unos guisantes congelados rehogados con un poco
 de mantequilla y sal. Son el acompañamiento perfecto para este plato.
 

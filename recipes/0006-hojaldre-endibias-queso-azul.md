@@ -81,7 +81,7 @@ troceado y las nueces.
 
 
 Introduce la preparación en el horno precalentado a 200º C y hornea durante
-15 minutos o hasta que el borde del hojaldre de endibias
+15 minutos[](timer:15:minutes) o hasta que el borde del hojaldre de endibias
 esté
 dorado. Entonces, retira la bandeja del horno y pasa la tarta salada a una
 rejilla para que se enfríe y la base quede crujiente, y espolvorea la

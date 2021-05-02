@@ -79,13 +79,13 @@ SO WHAT YOU WILL NEED IS:
 
 
 1. Remove the seeds from the Dried Chili’s. Cut them into smaller pieces,
-and soak in water for 15 minutes.
+and soak in water for 15 minutes[](timer:15:minutes).
 2. To make the rempah: add all the rempah ingredients into the food
 processor.
 Hit the switch to on, and blend until everything together until a paste is
-formed. This will take about 3 minutes.
+formed. This will take about 3 minutes[](timer:3:minutes).
 3. In a saucepan, turn the heat to medium. Add rempah and saute for about
-10 minutes. The paste will begin to thicken and darken, and the oils will
+10 minutes[](timer:10:minutes). The paste will begin to thicken and darken, and the oils will
 begin to separate the mixture a bit.
 4. Add the curry leaves.
 5. Next add the Cinnamon Stick, Cloves, Star Anise, and the *optional* Thai

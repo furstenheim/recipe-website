@@ -53,7 +53,7 @@ parmesano, u otro queso curado al gusto, también aporta su toque.
 
 Ya lo veis, es una receta sencilla, económica y deliciosa, ideal para hacer
 entre semana, aunque haya poco tiempo para cocinar, porque no se necesitan
-más de 20 minutos. Si os gustan los gnocchi caseros los podéis dejar
+más de 20 minutos[](timer:20:minutes). Si os gustan los gnocchi caseros los podéis dejar
 preparados el fin de semana, pero también podéis elegir un buen producto
 comercial, sin olvidar comprobar los valores nutricionales y los
 ingredientes con los que se elaboran, que sean los que tienen que ser. A

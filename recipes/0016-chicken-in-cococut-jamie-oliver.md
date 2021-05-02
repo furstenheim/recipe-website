@@ -58,7 +58,7 @@ salt and pepper.
 oil. Fry the chicken, turning the chicken to get an even colour all over
 until golden.
 3. Remove from heat. Add the rest of the ingredients into the pot. Place
-the pot into the preheated oven for 1 hour and 30 minutes. Baste with the
+the pot into the preheated oven for 1 hour and 30 minutes[](timer:30:minutes). Baste with the
 cooking juice occasionally.
 4. To serve, pull the meat off the bones and divide it onto your plates.
 Spoon over plenty of sauce and serve with rice or potatoes.

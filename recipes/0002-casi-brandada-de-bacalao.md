@@ -40,20 +40,20 @@ CookingTime: 2 h
 
 [content]: #()
 
-Cocemos el bacalao en el horno durante 8 minutos a 200º salpimentado.
+Cocemos el bacalao en el horno durante 8 minutos[](timer:8:minutes) a 200º salpimentado.
 Esperamos a que temple y lo desmigamos con los dedos.
 
 Cortamos los langostinos en cuadraditos gruesos.
 
 En una olla sofreír la cebolla y el ajo, comino y pimentón. A continuación
-agregar el vino blanco y llevar a ebullición (aproximadamente 5 minutos
+agregar el vino blanco y llevar a ebullición (aproximadamente 5 minutos[](timer:5:minutes)
 más).
 
 Agregamos el bacalao y los langostinos, a continuación la mantequilla y
 después la harina para hacer una bechamel. Poco a poco agregamos la leche
 caliente y remover bien hasta que quede una salsa espesa. A continuación,
 agregar la nata y el parmesano, condimentar con sal, pimienta y dejar
-cociendo durante 5 minutos más a fuego lento hasta que tome consistencia.
+cociendo durante 5 minutos[](timer:5:minutes) más a fuego lento hasta que tome consistencia.
 Si hace falta espesor agragamos pan rallado o si la queremos más líquida
 agragamos leche.
 

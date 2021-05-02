@@ -49,7 +49,7 @@ los que vamos cansados o tenemos poco tiempo para cocinar.
 
 ### Elaboración
 
-Lava la berenjena córtala en rodajas medias, cocínalas 8 minutos al microondas y deja que se enfríen para no estropear el hojaldre.
+Lava la berenjena córtala en rodajas medias, cocínalas 8 minutos[](timer:8:minutes) al microondas y deja que se enfríen para no estropear el hojaldre.
 
 Descongela el hojaldre con tiempo y
 enharina la superficie de trabajo. Extiende las láminas y amásalas

@@ -54,7 +54,7 @@ minutes.
 4. In a skillet or wok, heat the sesame oil and butter until melted on
 medium heat.
 5. Next, add the onions and garlic. Stir and fry for about a minute.
-6. Add the sliced mushrooms and cook for about 3 minutes.
+6. Add the sliced mushrooms and cook for about 3 minutes[](timer:3:minutes).
 7. Add the beef and cook until it is no longer pink.
 8. Add the udon to the skillet or wok.
 9. Add the soy sauce, oyster sauce, mirin, and Worcestershire sauce.

@@ -51,7 +51,7 @@ tuna, if you prefer a milder fish.
 
    1. Whisk together the soy sauce, vinegar, sesame oil and seeds, and red
    pepper flakes in a medium mixing bowl. Add the cubed tuna and scallions,
-   gently stir together to dress the tuna. Marinade for 5 minutes.
+   gently stir together to dress the tuna. Marinade for 5 minutes[](timer:5:minutes).
    2. Meanwhile, pit and cube the avocado (the chunks should be of a
    similar size to the tuna. Add to the tuna, and gently mix together to
    distribute the avocado.

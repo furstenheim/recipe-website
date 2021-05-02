@@ -33,10 +33,10 @@ CookingTime: 50 min
 
 
 Salpimentar la carne, colocarla en una fuente de horno con el aceite,
-hornear a 200º unos 30 minutos
+hornear a 200º unos 30 minutos[](timer:30:minutes)
 
 Cortar las manzanas con piel y descorazonadas, en trozos bastos, colocar
-con la carne, espolvorear el curry, hornear15 o 20 minutos más, servir con
+con la carne, espolvorear el curry, hornear15 o 20 minutos[](timer:20:minutes) más, servir con
 el romero
 está que se deshace y la manzana le da un sabor muy especial, como siempre
 las especias va a gusto de cada uno

@@ -83,7 +83,7 @@ minutes.
 4. Heat 2 teaspoon oil in a large nonstick skillet over medium heat.
 5. Swirl to coat the bottom of the pan with oil.
 6. When the oil becomes warm, add lamb. Stir and cook until the surface
-turns light brown but the meat is still raw inside, about 2 minutes.
+turns light brown but the meat is still raw inside, about 2 minutes[](timer:2:minutes).
 7. Transfer the lamb to a plate and set aside.
 8. Add the remaining 1 teaspoons oil (or less) heat the oil until hot. Add
 onions, garlic, and star anise and stir and cook for 1 minute.
