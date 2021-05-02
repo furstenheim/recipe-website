@@ -1,9 +1,10 @@
 <script lang="ts">//
 import * as dayjs from 'dayjs'
 import { timers } from './TimerStore'
+import {addToast} from './ToasterStore'
+
 export let href:string = ''
 export let title
-
 const isTimerLink = href.startsWith('timer:')
 let isTimerCorrect = false
 let timerUnit
@@ -25,6 +26,9 @@ function onClick () {
   timers.update(function (actualTimers) {
     actualTimers.push({ timeEnd: dayjs.default().add(timerAmount, timerUnit), title: text || 'Timer' })
     return actualTimers
+  })
+  addToast({
+    message: 'Timer added'
   })
 }
 </script>
