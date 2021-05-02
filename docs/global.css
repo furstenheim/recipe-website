@@ -90,6 +90,12 @@ button:focus {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-exclamation-circle:before {
+    content: "\f06a";
+}
 .icon-clipboard:before {
     content: "\e900";
+}
+.icon-history:before {
+    content: "\e94d";
 }

@@ -1,11 +1,13 @@
 <script lang="ts">//
 import SvelteMarkdown from 'svelte-markdown'
 import type { Recipe } from './recipe'
-import {afterUpdate, onMount} from 'svelte'
+import { afterUpdate, onMount } from 'svelte'
 import copy from 'copy-html-to-clipboard'
 import CountDown from './Countdown.svelte'
-
+import { timers } from './TimerStore'
+import Link from './Link.svelte'
 import * as dayjs from 'dayjs'
+
 export let params = {
   recipeId: ''
 }
@@ -21,9 +23,6 @@ let isSideIngredientsOpen = false
 let isSideTimersOpen = false
 let isSidePanelOpen: boolean
 $: isSidePanelOpen = isSideTimersOpen || isSideIngredientsOpen
-
-const countDowns: [{title: string, timer: dayjs.Dayjs}] = [{title: 'AAA', timer: dayjs.default().add(10, 'seconds')}]
-
 
 function toggleIngredientsOpen () {
   if (isSidePanelOpen && isSideIngredientsOpen) {
@@ -67,6 +66,7 @@ function copyIngredients () {
   const ingredientsElement = document.querySelector('.main-ingredients') || document.querySelector('.side-ingredients')
   copy(ingredientsElement.innerHTML, { asHtml: true })
 }
+
 </script>
 {#if recipe}
   <div class="ingredients-side-panel side-panel" class:side-panel--open="{isSidePanelOpen}"
@@ -79,8 +79,8 @@ function copyIngredients () {
     class:side-panel--on-top={isSideTimersOpen}
   >
     <h2>Timers</h2>
-    {#each countDowns as countDown}
-      <CountDown timeEnd="{countDown.timer}" title="{countDown.title}"/>
+    {#each $timers as countDown}
+      <CountDown timeEnd="{countDown.timeEnd}" title="{countDown.title}"/>
     {/each}
   </div>
   <div class="side-content-handler ingredients-content-handler" on:click={toggleIngredientsOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
@@ -110,7 +110,7 @@ function copyIngredients () {
           <div class="main-ingredients">
             <SvelteMarkdown source="{recipe.ingredientsContent}" />
           </div>
-          <SvelteMarkdown source="{recipe.content}" />
+          <SvelteMarkdown source="{recipe.content}" renderers="{{ link: Link }}"/>
   </div>
   </div>
   {/if}
