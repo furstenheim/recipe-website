@@ -63,19 +63,19 @@ el aceite de oliva virgen extra, el zumo de limón, la salsa de soja y la
 salsa perrins. Sazonamos al gusto, procurando no pasarnos, pues la salsa de
 soja contiene bastante sal, para no arriunar el resultado. Cubrimos el
 cuenco con papel transparente y lo dejamos macerar en la nevera durante 30
-minutos.
+minutos [](timer:30:minutes).
 
 Mientras tanto, pelamos la cebolleta, el aguacate y el tomate y los picamos
 finamente. En el caso del tomate, retiramos las semillas. Podemos practicar
 un corte en la base del tomate y escaldarlo en agua recién hervida, durante
-1 minuto, para terminar refrescándolo inmediatamente en agua helada. De
+1 minuto [](timer:1:minutes), para terminar refrescándolo inmediatamente en agua helada. De
 esta manera la piel sale con mucha facilidad.
 
 Transcurrido el tiempo de reposo, agregamos la cebolleta, el aguacate y el
 tomate picados al salmón. Removemos bien y probamos, para comprobar si
 necesitamos ajustar el punto de sal y darle el punto que nos guste. Lo
 cubrimos de nuevo y lo dejamos reposar una segunda vez, en la nevera,
-durante otros 30 minutos.
+durante otros 30 minutos [](timer:30:minutes).
 
 
 Con qué acompañar el tartar de salmón y aguacate
