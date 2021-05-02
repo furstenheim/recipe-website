@@ -9499,36 +9499,38 @@ var app = (function () {
     			create_component(sveltemarkdown4.$$.fragment);
     			t18 = space();
     			create_component(sveltemarkdown5.$$.fragment);
-    			attr_dev(div0, "class", "ingredients-side-panel side-panel svelte-5mm5g3");
+    			attr_dev(div0, "class", "ingredients-side-panel side-panel svelte-1fc2x6s");
     			toggle_class(div0, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
     			toggle_class(div0, "side-panel--on-top", /*isSideIngredientsOpen*/ ctx[0]);
     			add_location(div0, file$2, 75, 2, 2745);
     			add_location(h2, file$2, 84, 4, 3105);
-    			attr_dev(div1, "class", "timeouts-side-panel side-panel svelte-5mm5g3");
+    			attr_dev(div1, "class", "timeouts-side-panel side-panel svelte-1fc2x6s");
     			toggle_class(div1, "side-panel--open", /*isSidePanelOpen*/ ctx[3]);
     			toggle_class(div1, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
     			add_location(div1, file$2, 81, 2, 2962);
-    			attr_dev(p0, "class", "side-content-handler-opener svelte-5mm5g3");
-    			add_location(p0, file$2, 90, 4, 3412);
-    			attr_dev(div2, "class", "side-content-handler ingredients-content-handler svelte-5mm5g3");
+    			attr_dev(p0, "class", "side-content-handler-opener svelte-1fc2x6s");
+    			add_location(p0, file$2, 90, 4, 3461);
+    			attr_dev(div2, "class", "side-content-handler ingredients-content-handler svelte-1fc2x6s");
+    			toggle_class(div2, "side-panel--on-top", /*isSideIngredientsOpen*/ ctx[0]);
     			toggle_class(div2, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
     			add_location(div2, file$2, 89, 2, 3252);
-    			attr_dev(p1, "class", "side-content-handler-opener svelte-5mm5g3");
-    			add_location(p1, file$2, 93, 4, 3630);
-    			attr_dev(div3, "class", "side-content-handler timeouts-content-handler svelte-5mm5g3");
+    			attr_dev(p1, "class", "side-content-handler-opener svelte-1fc2x6s");
+    			add_location(p1, file$2, 93, 4, 3723);
+    			attr_dev(div3, "class", "side-content-handler timeouts-content-handler svelte-1fc2x6s");
+    			toggle_class(div3, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
     			toggle_class(div3, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
-    			add_location(div3, file$2, 92, 2, 3478);
-    			attr_dev(div4, "class", "side-ingredients svelte-5mm5g3");
-    			add_location(div4, file$2, 98, 4, 3728);
-    			add_location(p2, file$2, 107, 14, 4004);
-    			add_location(p3, file$2, 108, 14, 4071);
-    			add_location(div5, file$2, 106, 10, 3984);
-    			attr_dev(div6, "class", "main-ingredients svelte-5mm5g3");
-    			add_location(div6, file$2, 113, 10, 4279);
-    			attr_dev(div7, "class", "cooking-container svelte-5mm5g3");
-    			add_location(div7, file$2, 102, 2, 3837);
-    			attr_dev(div8, "class", "recipe-container svelte-5mm5g3");
-    			add_location(div8, file$2, 97, 2, 3693);
+    			add_location(div3, file$2, 92, 2, 3527);
+    			attr_dev(div4, "class", "side-ingredients svelte-1fc2x6s");
+    			add_location(div4, file$2, 98, 4, 3821);
+    			add_location(p2, file$2, 107, 14, 4097);
+    			add_location(p3, file$2, 108, 14, 4164);
+    			add_location(div5, file$2, 106, 10, 4077);
+    			attr_dev(div6, "class", "main-ingredients svelte-1fc2x6s");
+    			add_location(div6, file$2, 113, 10, 4372);
+    			attr_dev(div7, "class", "cooking-container svelte-1fc2x6s");
+    			add_location(div7, file$2, 102, 2, 3930);
+    			attr_dev(div8, "class", "recipe-container svelte-1fc2x6s");
+    			add_location(div8, file$2, 97, 2, 3786);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -9633,8 +9635,16 @@ var app = (function () {
     				toggle_class(div1, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
     			}
 
+    			if (dirty & /*isSideIngredientsOpen*/ 1) {
+    				toggle_class(div2, "side-panel--on-top", /*isSideIngredientsOpen*/ ctx[0]);
+    			}
+
     			if (dirty & /*isSidePanelOpen*/ 8) {
     				toggle_class(div2, "side-content-handler-opener--open", /*isSidePanelOpen*/ ctx[3]);
+    			}
+
+    			if (dirty & /*isSideTimersOpen*/ 2) {
+    				toggle_class(div3, "side-panel--on-top", /*isSideTimersOpen*/ ctx[1]);
     			}
 
     			if (dirty & /*isSidePanelOpen*/ 8) {
@@ -9795,7 +9805,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Achtung! Prepare previous day";
-    			add_location(p, file$2, 110, 18, 4195);
+    			add_location(p, file$2, 110, 18, 4288);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);

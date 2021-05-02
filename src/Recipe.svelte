@@ -83,10 +83,10 @@ function copyIngredients () {
       <CountDown timeEnd="{countDown.timeEnd}" title="{countDown.title}"/>
     {/each}
   </div>
-  <div class="side-content-handler ingredients-content-handler" on:click={toggleIngredientsOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
+  <div class="side-content-handler ingredients-content-handler" on:click={toggleIngredientsOpen} class:side-panel--on-top={isSideIngredientsOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
     <p class="side-content-handler-opener">Ingredients</p>
   </div>
-  <div class="side-content-handler timeouts-content-handler" on:click={toggleTimersOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
+  <div class="side-content-handler timeouts-content-handler" on:click={toggleTimersOpen} class:side-panel--on-top={isSideTimersOpen} class:side-content-handler-opener--open="{isSidePanelOpen}">
     <p class="side-content-handler-opener">Timers</p>
   </div>
 
@@ -180,7 +180,7 @@ function copyIngredients () {
         left:0vw;
     }
     .timeouts-content-handler {
-        top: 70vh;
+        top: calc(80vh - 120px);
         left:0vw;
     }
 
