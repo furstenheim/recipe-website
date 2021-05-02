@@ -75,7 +75,7 @@ Transcurrido el tiempo de reposo, agregamos la cebolleta, el aguacate y el
 tomate picados al salmón. Removemos bien y probamos, para comprobar si
 necesitamos ajustar el punto de sal y darle el punto que nos guste. Lo
 cubrimos de nuevo y lo dejamos reposar una segunda vez, en la nevera,
-durante otros 30 minutos[](timer:30:minutes) [](timer:30:minutes).
+durante otros 30 minutos[](timer:30:minutes).
 
 
 Con qué acompañar el tartar de salmón y aguacate

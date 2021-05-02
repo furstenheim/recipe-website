@@ -112,7 +112,7 @@ function copyIngredients () {
           <div class="main-ingredients">
             <SvelteMarkdown source="{recipe.ingredientsContent}" />
           </div>
-          <SvelteMarkdown source="{recipe.content}" renderers="{{ link: Link }}"/>
+          <SvelteMarkdown class="recipe-content" source="{recipe.content}" renderers="{{ link: Link }}"/>
   </div>
   </div>
   {/if}
@@ -238,7 +238,7 @@ function copyIngredients () {
     }
 
     .cooking-container {
-        text-align: left;
+        text-align: justify;
         padding: 1em;
         max-width: min(max(500px, 33vw), 100vh);
         margin: 0 auto;
