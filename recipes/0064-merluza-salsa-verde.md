@@ -37,7 +37,7 @@ CookingTime: 40 min
 
 [content]: #()
 
-Lo primero de todo es preparar las almejas para que suelten toda la arena. Tienes que dejarlas en remojo con sal 1 hora y cambiarles el agua un par de veces (total 2 horas). Si vas mal de tiempo déjalas en remojo mientras preparas la receta y sácalas del agua justo antes de añadir al la cazuela pero te arriesgas a tragar un poco de arena.
+Lo primero de todo es preparar las almejas para que suelten toda la arena. Tienes que dejarlas en remojo con sal 1 hora y cambiarles el agua un par de veces (total 2 minutes[](timer:2:minutes)). Si vas mal de tiempo déjalas en remojo mientras preparas la receta y sácalas del agua justo antes de añadir al la cazuela pero te arriesgas a tragar un poco de arena.
 
 Pela los dientes de ajo y pícalos muy finos. Coge una cazuela ancha (lo suficiente para meter las cuatro rodajas de merluza y las almejas), echa el aceite y pon a calentar. Luego añade los ajos y vigila que no se quemen.
 
@@ -45,7 +45,7 @@ Cuando los ajos lleven un par de segundos bailando en el aceite (saltando con el
 
 A continuación añade el vino y luego el caldo de pescado (si está caliente mejor). Si el caldo de pescado no lleva sal añade una pizca y prueba de sal, pero ten en cuenta que las almejas y el pescado soltarán algo de sal. Así que ve con cuidado.
 
-Sala las rodajas de merluzas por ambos lados y cuando el caldo esté bien caliente añade el perejil picado y las rodajas a la cazuela. Deja 3 minutos por una de las caras meneando la cazuela suavemente para que la salsa vaya ligando (como en el bacalao al Pil Pil).
+Sala las rodajas de merluzas por ambos lados y cuando el caldo esté bien caliente añade el perejil picado y las rodajas a la cazuela. Deja 3 minutos[](timer:3:minutes) por una de las caras meneando la cazuela suavemente para que la salsa vaya ligando (como en el bacalao al Pil Pil).
 
 Pasados los tres minutos dale la vuelta a las rodajas de merluza y añade las almejas. Sigue meneando la cazuela para que la salsa siga ligando A medida que se vayan abriendo las almejas puedes ir retirándolas con una pinzas a un plato y así evitarás que cojan una consistencia gomosa (muy dura, como caucho). Cuando las tengas todas abiertas devuelvelas a la cazuela para que tomen algo de calor y si han pasado tres minutos desde que le diste la vuelta a las rodajas de merluza el plato está listo para servir.
 

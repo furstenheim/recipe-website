@@ -52,14 +52,14 @@ For the mint yoghurt
 
 [content]: #()
 
-In a food processor, blitz the ginger, garlic, mint, coriander, chillies, yoghurt, lemon zest and four tablespoons of the lemon juice until smooth. Add the ground cumin, ground coriander and black pepper, half a tablespoon of salt and 300ml water, and mix well. Stir in the cardamom pods, cloves and cinnamon, then scrape out into a medium bowl. Add the chicken to the bowl, toss to coat and leave to marinate at room temperature for at least 30 minutes (or refrigerate and marinate overnight).
+In a food processor, blitz the ginger, garlic, mint, coriander, chillies, yoghurt, lemon zest and four tablespoons of the lemon juice until smooth. Add the ground cumin, ground coriander and black pepper, half a tablespoon of salt and 300ml water, and mix well. Stir in the cardamom pods, cloves and cinnamon, then scrape out into a medium bowl. Add the chicken to the bowl, toss to coat and leave to marinate at room temperature for at least 30 minutes[](timer:30:minutes) (or refrigerate and marinate overnight).
 
-Meanwhile, set a large saucepan for which you have a lid on a medium heat, add the oil and, once hot, add the onions, sugar and half a teaspoon of salt, and fry for 15 minutes, until golden brown. Transfer half the onion mix to a small bowl and set aside.
+Meanwhile, set a large saucepan for which you have a lid on a medium heat, add the oil and, once hot, add the onions, sugar and half a teaspoon of salt, and fry for 15 minutes[](timer:15:minutes), until golden brown. Transfer half the onion mix to a small bowl and set aside.
 
-Put the chicken and its marinade in the pan with the remaining onions, cover the pot and leave to cook for 20 minutes, stirring once or twice to prevent sticking.
+Put the chicken and its marinade in the pan with the remaining onions, cover the pot and leave to cook for 20 minutes[](timer:20:minutes), stirring once or twice to prevent sticking.
 
 Meanwhile, make the mint yoghurt. Blitz the mint, yoghurt, the remaining tablespoon of lemon juice and a teaspoon of salt until smooth, then scrape out into a small bowl and set aside.
 
-In a large saucepan, heat the sunflower oil on a medium heat and, once hot, fry the potatoes, turning regularly, for 15 minutes, or until golden brown. Use a slotted spoon to transfer the cooked potatoes to a large plate lined with kitchen paper, to drain, season with a teaspoon of salt and set aside.
+In a large saucepan, heat the sunflower oil on a medium heat and, once hot, fry the potatoes, turning regularly, for 15 minutes[](timer:15:minutes), or until golden brown. Use a slotted spoon to transfer the cooked potatoes to a large plate lined with kitchen paper, to drain, season with a teaspoon of salt and set aside.
 
 Divide the chicken mixture between four bowls, top with the onions and fried potatoes, finish with a spoonful of mint yoghurt and serve.

@@ -50,7 +50,7 @@ Enciende el **horno a 220º C** con calor arriba y abajo. Saca la masa de hojald
 
 Pinta el hojaldre con huevo batido y reparte los champiñones con tomates secos. Desmiga la [ricota salada](https://gastronomiaycia.republica.com/2008/09/01/requeson-y-ricotta/) y repártela también sobre el hojaldre. Dispón el queso Tête de Moine [en rosetas](https://gastronomiaycia.republica.com/2014/12/03/girolle-cortador-de-queso-tete-de-moine/) sobre la ricota y finalmente añade los piñones.
 
-Introduce la bandeja en el horno a altura media, baja la temperatura a 200º C y hornea el hojaldre unos 12-15 minutos o hasta que la masa esté dorada por los bordes. Entonces, retira del horno y deja enfriar sobre una rejilla.
+Introduce la bandeja en el horno a altura media, baja la temperatura a 200º C y hornea el hojaldre unos 12-15 minutos[](timer:15:minutes) o hasta que la masa esté dorada por los bordes. Entonces, retira del horno y deja enfriar sobre una rejilla.
 
 ## Acabado y presentación
 

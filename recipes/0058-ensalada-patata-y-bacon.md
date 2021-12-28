@@ -45,10 +45,10 @@ A su vez, aporta **su sabor y aroma a las patatas** mientras se va cocinando, no
 
 Lava muy bien las patatas para cocinarlas con su piel, **córtalas en gajos** del tamaño deseado, nuestras patatas eran alargadas, así que después de hacer los [clásicos gajos](https://gastronomiaycia.republica.com/2011/08/26/como-cortar-las-patatas-en-gajos/), los cortamos por la mitad. Lávalas y escúrrelas bien.
 
-Pon las patatas en un bol y condimenta con sal, comino en polvo y una cucharada de aceite de oliva virgen extra, mezcla bien y pon las patatas en la cesta de la **freidora de aire** (también puedes hacerlas en el horno convencional, o puedes cocerlas en el microondas y dorarlas en una sartén, como en [esta receta de patatas gajo](https://gastronomiaycia.republica.com/2017/07/07/como-hacer-patatas-gajo-saludables-en-diez-minutos/)). Programa 12 minutos a 180º C.
+Pon las patatas en un bol y condimenta con sal, comino en polvo y una cucharada de aceite de oliva virgen extra, mezcla bien y pon las patatas en la cesta de la **freidora de aire** (también puedes hacerlas en el horno convencional, o puedes cocerlas en el microondas y dorarlas en una sartén, como en [esta receta de patatas gajo](https://gastronomiaycia.republica.com/2017/07/07/como-hacer-patatas-gajo-saludables-en-diez-minutos/)). Programa 12 minutos[](timer:12:minutes) a 180º C.
 
 
-Mientras tanto, corta las lonchas de bacon ahumado en tiras anchas, cuando haya finalizado la programación de las patatas, incorpora el bacon y programa unos 8 minutos o hasta que **las patatas y el bacon estén dorados y crujientes**. Reserva a temperatura ambiente.
+Mientras tanto, corta las lonchas de bacon ahumado en tiras anchas, cuando haya finalizado la programación de las patatas, incorpora el bacon y programa unos 8 minutos[](timer:8:minutes) o hasta que **las patatas y el bacon estén dorados y crujientes**. Reserva a temperatura ambiente.
 
 Prepara la cebolla encurtida que vayas a incorporar a la ensalada de patata, escúrrela bien. Escurre también las aceitunas del [líquido de gobierno](https://gastronomiaycia.republica.com/2009/09/30/liquido-de-gobierno/), haz lo propio con las bolitas o perlas de mozzarella y prepara el resto de ingredientes, canónigos, especias…
 
