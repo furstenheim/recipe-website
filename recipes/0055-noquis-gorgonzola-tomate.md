@@ -1,6 +1,6 @@
 [title]: #()
 
-##Ñoquis de espinacas con chistorra y queso azul
+## Ñoquis de espinacas con chistorra y queso azul
 
 [img]: #()
 

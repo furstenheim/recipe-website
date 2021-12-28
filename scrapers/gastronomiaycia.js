@@ -3,11 +3,12 @@ const jsdom = require('jsdom')
 const {JSDOM} = jsdom
 const jqueryFactory = require('jquery')
 const turndown = new (require('turndown'))({headingStyle: 'atx'})
-const recipe = 'https://gastronomiaycia.republica.com/2020/11/20/noquis-de-espinacas-con-chistorra-y-queso-azul-convierte-una-comida-sencilla-en-un-festival-de-sabores/'
+const recipeName = 'Melanzane alla parmigiana'
+const recipe = 'https://gastronomiaycia.republica.com/2008/08/18/melanzane-alla-parmigiana/'
 const fs = require('fs-extra')
 const path = require('path')
 const dedent = require('dedent')
-
+const _ = require('lodash')
 main()
   .then(function () {
     console.log('success')
@@ -23,8 +24,8 @@ async function main () {
   const $ = jqueryFactory(dom.window)
   const content = dom.window.document.querySelector('.entry-content')
   const title = dom.window.document.querySelector('h1.entry-title').textContent
-  const ingredientsTitle = $(content).find('h2:contains("Ingre")')
-  const ingredients = ingredientsTitle.nextUntil('h2')
+  const ingredientsTitle = $(content).find('h3:contains("Ingre"), h2:contains("Ingre")')
+  const ingredients = ingredientsTitle.nextUntil('h3')
   ingredientsTitle[0].remove()
   ingredients[0].remove()
   const ingredientsContent = turndown.turndown(ingredients[0].innerHTML)
@@ -33,18 +34,20 @@ async function main () {
   const recipeContent = turndown.turndown(content.innerHTML)
 
   const image = await superagent.get(imageSrc).buffer(true).parse(superagent.parse.image)
-  console.log(image.body)
+  const imageDir = await fs.readdir('../docs/imgs')
+  const latestImage = _.last(_.sortBy(imageDir))
+  const number = parseInt(latestImage.substr(0, 4)) + 1
+  const fileName = _.padStart(number, 4, '0') + '-' + _.kebabCase(recipeName)
+  await fs.writeFile(`../docs/imgs/${fileName}.${path.extname(imageSrc)}`, image.body)
 
-  await fs.writeFile(`./gastronomia${path.extname(imageSrc)}`, image.body)
-
-  console.log(dedent`
+  const markdownContent = dedent`
     [title]: #()
   
-    ##${title} 
+    ## ${title} 
     
     [img]: #()
     
-    ![](../docs/imgs/)
+    ![](../docs/imgs/${fileName}.${path.extname(imageSrc)})
     
     [#url]:#()
     
@@ -68,7 +71,8 @@ async function main () {
     ${recipeContent}
   
   
-  `)
+  `
+  await fs.writeFile(`../recipes/${fileName}.md`, markdownContent)
 
 }
 
