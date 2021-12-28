@@ -4,7 +4,7 @@
 
 [img]: #()
 
-![](../docs/imgs/0057-hojaldre-tomates-secos-y-champinones..jpg)
+![](../docs/imgs/0057-hojaldre-tomates-secos-y-champinones.jpg)
 
 [#url]:#()
 

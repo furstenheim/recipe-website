@@ -4,7 +4,7 @@
 
 [img]: #()
 
-![](../docs/imgs/0058-ensalada-patata-y-bacon..jpg)
+![](../docs/imgs/0058-ensalada-patata-y-bacon.jpg)
 
 [#url]:#()
 

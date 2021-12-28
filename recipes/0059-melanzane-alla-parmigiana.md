@@ -4,7 +4,7 @@
 
 [img]: #()
 
-![](../docs/imgs/0059-melanzane-alla-parmigiana..jpg)
+![](../docs/imgs/0059-melanzane-alla-parmigiana.jpg)
 
 [#url]:#()
 

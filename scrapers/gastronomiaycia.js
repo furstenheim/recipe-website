@@ -38,7 +38,7 @@ async function main () {
   const latestImage = _.last(_.sortBy(imageDir))
   const number = parseInt(latestImage.substr(0, 4)) + 1
   const fileName = _.padStart(number, 4, '0') + '-' + _.kebabCase(recipeName)
-  await fs.writeFile(`../docs/imgs/${fileName}.${path.extname(imageSrc)}`, image.body)
+  await fs.writeFile(`../docs/imgs/${fileName}${path.extname(imageSrc)}`, image.body)
 
   const markdownContent = dedent`
     [title]: #()
