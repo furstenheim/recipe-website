@@ -196,11 +196,11 @@ function copyIngredients () {
     }
 
     .ingredients-content-handler {
-        top: 80vh;
+        top: 50vh;
         left:0vw;
     }
     .timeouts-content-handler {
-        top: calc(80vh - 120px);
+        top: calc(50vh - 120px);
         left:0vw;
     }
 
