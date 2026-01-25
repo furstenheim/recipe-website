@@ -51,22 +51,22 @@ CookingTime: 30 min
 
 This homemade green curry starts from scratch by pounding Thai green curry paste, then combining it with chopped chicken and rich coconut cream for authentic Central Thai flavors.
 
-1. Prepare paste ingredients: remove chili stems, peel garlic/shallots, thinly slice galangal, cilantro roots, and lemongrass. Slice kaffir lime peel delicately. Dry roast cumin and coriander seeds for 30 seconds[](timer:30:seconds).
+1. Prepare your ingredients to pound your green curry paste. Remove the stems of the Thai green chilies, peel the garlic and shallots, thinly slice the galangal, cilantro roots, and lemongrass.
 
-2. Pound all paste ingredients (except shrimp paste) in stone mortar and pestle for 1-2 hours[](timer:2:hours) until smooth pureed consistency with no visible chili seeds.
+2. Pound all the green curry paste ingredients in a stone mortar and pestle, apart from the shrimp paste, which you'll add at the very end. This will take 1-2 hours[](timer:2:hours) until you get a smooth pureed consistency.
 
-3. Add shrimp paste to finished paste, mix until evenly incorporated.
+3. Once your paste is finished, add the shrimp paste, and mix and mash until it's evenly mixed in.
 
-4. Clean and gut whole chicken, chop into bite-sized pieces (or use standard cuts like drumsticks/thighs).
+4. Prepare your whole chicken by gutting and cleaning it. Chop the entire chicken into bite sized pieces.
 
-5. Add 2 cups water, green curry paste, chicken pieces, and 10 kaffir lime leaves (broken in half) to pot.
+5. In a pot, add 2 cups of water, the green curry paste, your pieces of chicken, and toss in about 10 kaffir lime leaves (broken in half).
 
-6. Boil chicken approximately 10 minutes[](timer:10:minutes) until tender and most water evaporates.
+6. Boil the chicken for about 10 minutes[](timer:10:minutes), or until the chicken is tender and most of the water has evaporated.
 
-7. While chicken cooks, quarter Thai eggplant, pluck basil leaves from stems, and julienne red spur chilies.
+7. While the chicken cooks, quarter the Thai eggplant, pluck the basil leaves from the stems, and julienne the red spur chilies.
 
-8. Add coconut cream to pot, bring to boil with gentle stirring. Taste and add salt (approximately ½ tsp).
+8. Add the coconut cream to the pot, bring to a boil with gentle stirring. Taste and add salt (approximately ½ tsp).
 
-9. Add eggplant and spur chilies, boil 2-3 minutes[](timer:3:minutes).
+9. Add the eggplant and spur chilies, boil for 2-3 minutes[](timer:3:minutes).
 
-10. Add Thai sweet basil, turn off heat, and let wilt into curry.
+10. Add the Thai sweet basil, turn off the heat, and let it wilt into the curry.
