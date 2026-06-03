@@ -8,50 +8,53 @@
 
 [url]: #()
 
-https://web.archive.org/web/20260208022928/https://raizdeguzman.com/gallina-pepitoria-receta-sorprender-dia-madre/
+https://www.directoalpaladar.com/recetas-de-carnes-y-aves/gallina-pepitoria-receta-clasico-que-reivindicar-porque-esta-para-chuparse-dedos
 
 [recipe-time]: #()
 
 PreviousDay: false
 
-TotalTime: 2h 20 min
+TotalTime: 1h 50 min
 
-CookingTime: 2h
+CookingTime: 1h 30 min
 
 [ingredients-content]: #()
 
-### Ingredientes (4 personas)
+### Ingredientes (2 personas)
 
-* 1 gallina o 1 pollo de 1 kilogramo
-* 2 cebollas
-* 2 huevos
-* 2 dientes de ajo
-* Almendras tostadas
-* Azafrán
-* Vino blanco
-* Una cucharada de harina
+* Cuartos traseros de pollo: 2
+* Diente de ajo: 2
+* Pan ligeramente duro (rebanada): 1
+* Almendra granillo: 15 g
+* Azafrán: 3-4 hebras
+* Cebolla: 0.5
+* Vino blanco: 80 ml
+* Caldo de pollo: 250 ml
 * Aceite de oliva virgen extra
 * Sal
-* Pimienta
+* Pimienta negra molida
+* Huevo duro o cocido: 1
 
 [content]: #()
 
-Las carnes blancas destacan por su versatilidad en cuestiones gastronómicas, ya que admiten todo tipo de combinaciones e ingredientes dispares.
+Esta receta de **gallina en pepitoria** es un clásico de la gastronomía española y está para chuparse los dedos. Hoy en día es más común encontrar el pollo en pepitoria, cuya carne es más tierna y requiere de menos tiempo de cocción, pero prepararla con gallina, a la antigua usanza, tiene su encanto.
 
-**Elaboración de la gallina en pepitoria**
+Antiguamente, la gallina era el ave elegida para preparar la pepitoria. Más sabrosa, económica y asequible que el pollo, pero de carne más dura y fibrosa. Algo que se puede domar con una **cocción más prolongada**. El resultado es un plato sabrosísimo que hoy preparamos como mandan los cánones.
 
-Lo primero que hay que hacer es limpiar bien la gallina o pollo. Ello conlleva eliminar los restos de plumas y demás impurezas y lavar con abundante agua caliente.
+Os invitamos a que preparéis con nosotros este **guiso de toda la vida** y lo incorporéis a vuestros recetarios. Es un plato que merece la pena reivindicar. Sus ingredientes sencillos de encontrar, así que no hay excusa para no ponerse manos a la obra. Al lío.
 
-En caso de que la carne no esté partida, utilizar un cuchillo para trocear la carne en octavas y acto seguido, salpimentar al gusto del comensal. Reservar para más adelante.
+**Cómo hacer gallina en pepitoria:**
 
-Mientras tanto, poner a cocer en una cazuela los huevos durante unos 10 minutos[](timer:10:minutes). Transcurrido ese tiempo, escurrir el agua, pelar los huevos y reservar las yemas para más adelante.
+Salpimentamos los cuartos traseros de gallina y los doramos en una sartén honda a fuego fuerte y con un chorrito de aceite. Retiramos y reservamos. Agregamos un poco más de aceite y pochamos la cebolla cortada en juliana hasta que **esté tierna**.
 
-Para continuar, en una tabla de cocina, hay que pelar las cebollas y los ajos. Después, calentar aceite en una cazuela y freír hasta que estén dorados. Por otro lado, calentar aceite en una sartén y freír la carne.
+Mientras tanto, **en otra sartén**, calentamos un poco de aceite y doramos los ajos, pelados. Cortamos el pan en dados y los añadimos junto con las almendras. Cuando estén tostados, retiramos la sartén del fuego y agregamos las hebras de azafrán. Removemos y dejamos que se tueste ligeramente con el calor residual.
 
-Cuando esté lo suficientemente dorada, comienza la elaboración del guiso. Para ello, añadir la carne a la cazuela junto con las hojas de laurel, la harina (para que la mezcla espese) y el vino blanco. Es importante remover bien para que no queden grumos.
+Una vez pochada la cebolla, volvemos a meter la gallina en la sartén y regamos con el vino. Dejamos que cueza un par de minutos[](timer:2:minutes) para que se evapore el alcohol y luego cubrimos con el caldo y **tapamos**. Cocemos durante 60-90 minutos[](timer:90:minutes), aproximadamente, o hasta que la gallina esté tierna.
 
-Si usas una cazuela, debes dejar que se cocine a fuego lento durante 2 horas[](timer:2:hours) aproximadamente. Si, por el contrario, optas por una olla exprés, en media hora[](timer:30:minutes) estará listo el guiso.
+Cortamos el huevo duro por la mitad y separamos la clara de la yema. Trituramos esta última con el ajo, la almendra, el pan y el azafrán, añadiendo **un poco de caldo** que retiramos de la cocción de la gallina. Vertemos el resultado sobre la gallina.
 
-En este periodo, servirse de un mortero para hacer un majado con las almendras tostadas, las yemas de huevo y el azafrán. A esta mezcla debes añadirle un poco del caldo del pollo para que se cree una pasta homogénea.
+Probamos el punto de sabor y salpimentamos al gusto. Cocemos unos minutos más para que **la salsa espese antes de servir**, espolvoreando la gallina con la clara de huevo picada y un poco de perejil.
 
-Después, incluir esta pasta a la cazuela y dejar cocer unos 10 minutos[](timer:10:minutes) más. A la hora de servir, utilizar una cazuela de barro y coronar el plato con trocitos de la clara de huevo sobrante.
+**Acompañamientos:**
+
+Lo primero, primerísimo, que hay que llevar a la mesa junto con la fuente de **gallina en pepitoria** es una buena cesta de pan. La salsa lo pide y, si no lo tienes, lo vas a echar mucho de menos. Una guarnición de arroz blanco es perfecta para completar este manjar.
